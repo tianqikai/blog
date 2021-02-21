@@ -1,0 +1,115 @@
+2020-10-14 22:50:58.498 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 7496 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 22:50:58.508 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 22:50:59.929 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 22:51:00.804 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 22:51:00.821 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 22:51:00.823 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 22:51:00.823 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 22:51:00.946 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 22:51:00.946 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2303 ms
+2020-10-14 22:51:01.109 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 22:51:03.716 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 22:51:03.915 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 22:51:03.918 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 22:51:03.929 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 22:53:22.510 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8664 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 22:53:22.515 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 22:53:35.695 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 9116 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 22:53:35.699 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 22:53:37.053 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 22:53:37.918 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 22:53:37.933 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 22:53:37.933 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 22:53:37.934 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 22:53:38.055 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 22:53:38.056 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2282 ms
+2020-10-14 22:53:38.210 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 22:53:41.170 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 22:53:41.873 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 22:53:41.876 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 22:53:41.885 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 22:57:17.174 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8280 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 22:57:17.178 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 22:57:18.569 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 22:57:19.446 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 22:57:19.465 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 22:57:19.465 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 22:57:19.466 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 22:57:19.590 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 22:57:19.591 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2354 ms
+2020-10-14 22:57:19.753 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 22:57:22.338 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 22:57:23.110 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 22:57:23.114 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 22:57:23.128 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 23:02:25.129 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8824 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 23:02:25.133 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 23:02:26.413 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 23:02:27.247 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 23:02:27.259 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 23:02:27.259 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 23:02:27.260 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 23:02:27.368 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 23:02:27.369 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2182 ms
+2020-10-14 23:02:27.504 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 23:02:30.240 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 23:02:30.942 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 23:02:30.945 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 23:02:30.957 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 23:02:57.340 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 6056 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 23:02:57.343 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 23:02:58.898 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 23:02:59.687 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 23:02:59.702 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 23:02:59.703 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 23:02:59.704 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 23:02:59.822 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 23:02:59.823 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2403 ms
+2020-10-14 23:02:59.943 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 23:03:02.552 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 23:03:03.290 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 23:03:03.293 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 23:03:03.316 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 23:06:22.333 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 7552 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 23:06:22.336 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 23:06:23.576 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 23:06:24.339 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 23:06:24.356 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 23:06:24.357 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 23:06:24.358 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 23:06:24.492 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 23:06:24.493 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2101 ms
+2020-10-14 23:06:24.655 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 23:06:27.405 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 23:06:28.065 INFO  [main]com.alibaba.druid.pool.DruidDataSource.close:1825 -{dataSource-1} closed
+2020-10-14 23:06:28.068 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Stopping service [Tomcat]
+2020-10-14 23:06:28.078 INFO  [main]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-14 23:08:34.144 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 5508 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 23:08:34.148 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 23:09:40.117 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 3328 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-14 23:09:40.121 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-14 23:09:41.400 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-14 23:09:42.234 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-10-14 23:09:42.246 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-14 23:09:42.249 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-14 23:09:42.249 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-14 23:09:42.357 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-14 23:09:42.359 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2090 ms
+2020-10-14 23:09:42.517 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-14 23:09:45.288 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-14 23:09:49.383 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-14 23:09:56.512 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-10-14 23:09:56.546 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-10-14 23:09:56.549 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 17.487 seconds (JVM running for 18.029)

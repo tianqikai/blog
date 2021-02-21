@@ -1,0 +1,24 @@
+2020-09-03 23:36:47.296 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-09-03 23:36:47.720 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-09-03 23:36:47.933 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-09-03 23:36:48.369 ERROR [main]o.s.boot.diagnostics.LoggingFailureAnalysisReporter.report:40 -
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field logService in com.tqk.blog.aspect.RequestAspect required a bean of type 'com.tqk.blog.service.LogService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.tqk.blog.service.LogService' in your configuration.
+
+2020-09-03 23:57:27.200 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-09-03 23:57:27.608 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-09-03 23:57:27.790 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]

@@ -1,0 +1,49 @@
+2020-11-21 23:00:07.380 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-21 23:07:16.802 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-21 23:09:31.641 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:09:31.674 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, POST(String), 16(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:09:31.762 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:10:39.567 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-21 23:10:54.416 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:10:54.453 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, GET(String), 16(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:10:54.535 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:12:00.318 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-21 23:12:20.566 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:12:20.600 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, GET(String), 15(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:12:20.687 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:12:32.714 DEBUG [http-nio-8899-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:12:32.716 DEBUG [http-nio-8899-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, GET(String), 5(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:12:32.806 DEBUG [http-nio-8899-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:13:24.256 DEBUG [http-nio-8899-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:13:24.258 DEBUG [http-nio-8899-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, GET(String), 6(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:13:24.360 DEBUG [http-nio-8899-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:13:24.451 DEBUG [http-nio-8899-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:13:24.453 DEBUG [http-nio-8899-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/info(String), [](String), 0(Integer), 	at com.tqk.blog.controller.AdminController.getLoginInfo(AdminController.java:60)
+	at com.tqk.blog.controller.AdminController$$FastClassBySpringCGLIB$$5e004558.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.AdminController$$EnhancerBySpringCGLIB$$b20e44d3.getLoginInfo(<generated>)
+(String), GET(String), 0(Long), null, 192.168.101.29(String)
+2020-11-21 23:13:24.534 DEBUG [http-nio-8899-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:21:47.608 DEBUG [http-nio-8899-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:21:47.610 DEBUG [http-nio-8899-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, GET(String), 4(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:21:47.692 DEBUG [http-nio-8899-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:21:47.849 DEBUG [http-nio-8899-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:21:47.851 DEBUG [http-nio-8899-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/info(String), [](String), 0(Integer), 	at com.tqk.blog.controller.AdminController.getLoginInfo(AdminController.java:60)
+	at com.tqk.blog.controller.AdminController$$FastClassBySpringCGLIB$$5e004558.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.AdminController$$EnhancerBySpringCGLIB$$b20e44d3.getLoginInfo(<generated>)
+(String), GET(String), 0(Long), null, 192.168.101.29(String)
+2020-11-21 23:21:47.939 DEBUG [http-nio-8899-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:23:04.647 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-21 23:23:31.543 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-11-21 23:23:31.571 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-11-21 23:23:31.635 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-11-21 23:23:31.785 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:23:31.788 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [](String), 1(Integer), null, POST(String), 185(Long), {"code":20000,"data":{"token":"sessionId"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:23:31.868 DEBUG [http-nio-8899-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:23:32.006 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:23:32.008 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/info(String), [](String), 1(Integer), null, GET(String), 2(Long), {"code":20000,"data":{"name":"田起凯","password":"","signature":"hold on","username":"admin"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:23:32.083 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-21 23:40:52.524 DEBUG [http-nio-8899-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-21 23:40:52.526 DEBUG [http-nio-8899-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/info(String), [](String), 1(Integer), null, GET(String), 3(Long), {"code":20000,"data":{"name":"田起凯","password":"","signature":"hold on","username":"admin"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-21 23:40:52.601 DEBUG [http-nio-8899-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

@@ -1,0 +1,12 @@
+server:
+  port: 8899
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.tqk
+spring:
+  profiles:
+    active: dev
+# 打印 sql语句使用
+logging:
+  level:
+    com.lucifer.springboot.cache.mapper: debug

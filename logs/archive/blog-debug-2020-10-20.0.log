@@ -1,0 +1,49 @@
+2020-10-20 21:52:58.920 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:20:02.487 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:29:22.628 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:31:52.931 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:33:27.219 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:38:21.261 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:38:51.481 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:47:44.113 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:48:19.375 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:51:02.735 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:51:55.530 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 22:54:04.418 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 23:07:15.831 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 23:07:56.546 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:07:56.593 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 14(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:07:56.683 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:35:06.063 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 23:36:36.044 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:36:36.095 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 14(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:36:36.189 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:36:46.148 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:36:46.150 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 6(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:36:46.242 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:36:47.450 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:36:47.451 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 3(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:36:47.541 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:36:48.282 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:36:48.284 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 4(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:36:48.384 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:36:51.683 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:36:51.685 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 2(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:36:51.774 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:39:42.721 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 23:40:44.319 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:40:44.369 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 14(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:40:44.452 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:40:49.249 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:40:49.251 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 2(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:40:49.332 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:41:23.469 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-20 23:41:45.689 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:41:45.738 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/welcome(String), [](String), 1(Integer), null, GET(String), 16(Long), "hhhhhhhhhhhhh"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:41:45.836 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:42:10.446 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:42:10.448 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /hotel/welcome(String), [](String), 1(Integer), null, GET(String), 9(Long), "欢迎登陆莫兰迪酒店！"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:42:10.529 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-20 23:42:20.189 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-20 23:42:20.190 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /hotel/welcome(String), [](String), 1(Integer), null, GET(String), 3(Long), "欢迎登陆莫兰迪酒店！"(String), 0:0:0:0:0:0:0:1(String)
+2020-10-20 23:42:20.273 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

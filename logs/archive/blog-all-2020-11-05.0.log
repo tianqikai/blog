@@ -1,0 +1,748 @@
+2020-11-05 00:40:19.044 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 9652 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-11-05 00:40:19.051 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-05 00:40:19.054 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-11-05 00:40:20.463 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.614 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.tqk.blog.config.ShiroConfig$$EnhancerBySpringCGLIB$$a3b48d7d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.683 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'mybatis-tk.mybatis.mapper.autoconfigure.MybatisProperties' of type [tk.mybatis.mapper.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.699 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration' of type [tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$ecb210ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.705 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$506d5e84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.711 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-11-05 00:40:20.787 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.806 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:20.829 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.416 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-11-05 00:40:24.417 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.511 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.863 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.873 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.961 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:24.969 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [com.sun.proxy.$Proxy86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:25.016 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminServiceImpl' of type [com.tqk.blog.service.impl.AdminServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:25.018 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminRealm' of type [com.tqk.blog.realm.AdminRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:25.568 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:25.605 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-05 00:40:25.660 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-11-05 00:40:25.854 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-11-05 00:40:25.962 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-11-05 00:40:25.973 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-11-05 00:40:25.974 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-11-05 00:40:25.974 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-11-05 00:40:25.975 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-05 00:40:26.130 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-11-05 00:40:26.131 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 7018 ms
+2020-11-05 00:40:27.327 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-05 00:40:27.794 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-11-05 00:40:27.829 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-11-05 00:40:27.835 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 9.473 seconds (JVM running for 10.032)
+2020-11-05 00:54:05.555 INFO  [http-nio-8080-exec-2]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-05 00:54:05.555 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-11-05 00:54:05.571 INFO  [http-nio-8080-exec-2]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 15 ms
+2020-11-05 00:54:05.689 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /BlAdmin/login
+2020-11-05 00:54:05.691 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 00:54:05.694 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 00:54:05.696 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.AdminController.login
+2020-11-05 00:54:05.697 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlAdmin@6fbe7958]
+2020-11-05 00:54:05.788 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-11-05 00:54:05.832 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-11-05 00:54:05.937 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-11-05 00:54:05.953 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 264
+2020-11-05 00:54:06.042 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"token":"1BC313B3659F717C60D97A6DB33A4348"},"msg":"操作成功！"}
+2020-11-05 00:54:06.085 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:54:06.088 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@6fbe7958](String), 1(Integer), null, POST(String), 264(Long), {"code":20000,"data":{"token":"1BC313B3659F717C60D97A6DB33A4348"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 00:54:06.171 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 00:54:25.561 WARN  [http-nio-8080-exec-3]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String "Java": not a valid Integer value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String "Java": not a valid Integer value
+ at [Source: (PushbackInputStream); line: 5, column: 16] (through reference chain: com.tqk.blog.pojo.BlBlog["blogType"])]
+2020-11-05 00:54:45.584 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/save
+2020-11-05 00:54:45.584 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 00:54:45.585 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 00:54:45.585 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.save
+2020-11-05 00:54:45.586 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@12ec4c11]
+2020-11-05 00:54:45.702 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==>  Preparing: insert into bl_blog( blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:54:45.705 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==> Parameters: 1324032347775086592(String), null, Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 1(Integer), Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), 百度(String)
+2020-11-05 00:54:46.346 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:54:46.350 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/save(String), [com.tqk.blog.pojo.BlBlog@12ec4c11](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+### The error may involve com.tqk.blog.mapper.BlBlogMapper.save-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+; Column 'blog_title' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+	at com.tqk.blog.service.impl.BlogServiceImpl.save(BlogServiceImpl.java:55)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.save(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.save(<generated>)
+	at com.tqk.blog.controller.BlogController.save(BlogController.java:39)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-11-05 00:54:46.471 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 00:54:46.476 ERROR [http-nio-8080-exec-5]o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet].log:175 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+### The error may involve com.tqk.blog.mapper.BlBlogMapper.save-Inline
+### The error occurred while setting parameters
+### SQL: insert into bl_blog(     blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source     ) values (     ?, ?, ?, ?, ?, ?, ?     )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+; Column 'blog_title' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy116.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy114.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy83.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy92.save(Unknown Source)
+	at com.tqk.blog.service.impl.BlogServiceImpl.save(BlogServiceImpl.java:55)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.save(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.save(<generated>)
+	at com.tqk.blog.controller.BlogController.save(BlogController.java:39)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.save(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 00:54:55.277 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/save
+2020-11-05 00:54:55.279 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 00:54:55.279 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 00:54:55.280 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.save
+2020-11-05 00:54:55.280 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@dd52d76]
+2020-11-05 00:54:55.434 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==>  Preparing: insert into bl_blog( blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:54:55.436 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==> Parameters: 1324032388606636032(String), null, Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 1(Integer), Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), 百度(String)
+2020-11-05 00:54:55.694 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:54:55.696 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/save(String), [com.tqk.blog.pojo.BlBlog@dd52d76](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+### The error may involve com.tqk.blog.mapper.BlBlogMapper.save-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+; Column 'blog_title' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+	at com.tqk.blog.service.impl.BlogServiceImpl.save(BlogServiceImpl.java:55)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.save(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.save(<generated>)
+	at com.tqk.blog.controller.BlogController.save(BlogController.java:39)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-11-05 00:54:55.793 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 00:54:55.795 ERROR [http-nio-8080-exec-7]o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet].log:175 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+### The error may involve com.tqk.blog.mapper.BlBlogMapper.save-Inline
+### The error occurred while setting parameters
+### SQL: insert into bl_blog(     blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source     ) values (     ?, ?, ?, ?, ?, ?, ?     )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+; Column 'blog_title' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'blog_title' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy116.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy114.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy83.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:57)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy92.save(Unknown Source)
+	at com.tqk.blog.service.impl.BlogServiceImpl.save(BlogServiceImpl.java:55)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.save(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.save(<generated>)
+	at com.tqk.blog.controller.BlogController.save(BlogController.java:39)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.save(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 00:55:26.887 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/save
+2020-11-05 00:55:26.888 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 00:55:26.888 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 00:55:26.888 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.save
+2020-11-05 00:55:26.888 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@46a08be4]
+2020-11-05 00:55:27.075 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==>  Preparing: insert into bl_blog( blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:55:27.078 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==> Parameters: 1324032521322803200(String), Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 1(Integer), Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), 百度(String)
+2020-11-05 00:55:27.218 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 00:55:27.221 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-11-05 00:55:27.223 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-11-05 00:55:27.271 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-11-05 00:55:27.274 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==>  Preparing: UPDATE bl_type SET type_name = ?,type_blog_count = ?,enable = ?,deleted = ? WHERE type_id = ? 
+2020-11-05 00:55:27.277 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==> Parameters: Java(String), 101(Integer), 1(Integer), 0(Integer), 1(Integer)
+2020-11-05 00:55:27.373 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -<==    Updates: 1
+2020-11-05 00:55:27.483 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 596
+2020-11-05 00:55:27.484 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"添加成功！"}
+2020-11-05 00:55:27.573 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 00:55:27.575 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/save(String), [com.tqk.blog.pojo.BlBlog@46a08be4](String), 1(Integer), null, POST(String), 596(Long), {"code":20000,"msg":"添加成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 00:55:27.664 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:01:03.033 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/get/1324032521322803200
+2020-11-05 01:01:03.034 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-11-05 01:01:03.034 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:01:03.035 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.get
+2020-11-05 01:01:03.035 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1324032521322803200]
+2020-11-05 01:01:03.083 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==>  Preparing: select blog_id, blog_title, blog_content, blog_goods, blog_image, blog_read, blog_collection, blog_type, blog_remark, blog_comment, blog_source, created_time, version from bl_blog where blog_id = ? and deleted = 0 
+2020-11-05 01:01:03.085 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==> Parameters: 1324032521322803200(String)
+2020-11-05 01:01:03.179 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -<==      Total: 1
+2020-11-05 01:01:03.181 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 148
+2020-11-05 01:01:03.199 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"blogCollection":0,"blogComment":0,"blogContent":"在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚","blogGoods":0,"blogId":"1324032521322803200","blogImage":"Java","blogRead":0,"blogRemark":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogSource":"百度","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogType":1,"createdTime":1604480124000,"version":1},"msg":"操作成功！"}
+2020-11-05 01:01:03.289 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:01:03.291 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/get/1324032521322803200(String), [1324032521322803200](String), 1(Integer), null, GET(String), 148(Long), {"code":20000,"data":{"blogCollection":0,"blogComment":0,"blogContent":"在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚","blogGoods":0,"blogId":"1324032521322803200","blogImage":"Java","blogRead":0,"blogRemark":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogSource":"百度","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogType":1,"createdTime":1604480124000,"version":1},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:01:03.409 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:02:40.460 WARN  [http-nio-8080-exec-4]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.tqk.blog.utils.Result<java.lang.Object> com.tqk.blog.controller.BlogController.update(com.tqk.blog.pojo.BlBlog)]
+2020-11-05 01:04:43.012 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/update
+2020-11-05 01:04:43.012 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : PUT
+2020-11-05 01:04:43.013 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:04:43.013 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.update
+2020-11-05 01:04:43.013 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@73a75a61]
+2020-11-05 01:04:43.106 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==>  Preparing: select blog_id, blog_title, blog_content, blog_goods, blog_image, blog_read, blog_collection, blog_type, blog_remark, blog_comment, blog_source, created_time, version from bl_blog where blog_id = ? and deleted = 0 
+2020-11-05 01:04:43.107 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==> Parameters: null
+2020-11-05 01:04:43.191 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -<==      Total: 0
+2020-11-05 01:04:43.230 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==>  Preparing: update bl_blog set version = version + 1 ,blog_title = ? ,blog_image = ? ,blog_content = ? ,blog_type = ? ,blog_remark = ? ,blog_source = ? where blog_id = ? and version = ? 
+2020-11-05 01:04:43.231 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==> Parameters: Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 1(Integer), valu可选的限定描述符，指定使用的事务管理器(String), 百度(String), null, null
+2020-11-05 01:04:43.313 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -<==    Updates: 0
+2020-11-05 01:04:43.461 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:04:43.462 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/update(String), [com.tqk.blog.pojo.BlBlog@73a75a61](String), 0(Integer), 	at com.tqk.blog.service.impl.BlogServiceImpl.update(BlogServiceImpl.java:75)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.update(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.update(<generated>)
+	at com.tqk.blog.controller.BlogController.update(BlogController.java:60)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.update(<generated>)
+(String), PUT(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:04:43.564 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:04:43.566 ERROR [http-nio-8080-exec-7]o.a.c.c.C.[Tomcat].[localhost].[/].[dispatcherServlet].log:175 -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.tqk.blog.service.impl.BlogServiceImpl.update(BlogServiceImpl.java:75)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.update(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:366)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:99)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.update(<generated>)
+	at com.tqk.blog.controller.BlogController.update(BlogController.java:60)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:769)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:56)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:55)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.update(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-05 01:05:24.601 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/update
+2020-11-05 01:05:24.603 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : PUT
+2020-11-05 01:05:24.604 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:05:24.605 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.update
+2020-11-05 01:05:24.605 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@69414344]
+2020-11-05 01:05:24.689 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==>  Preparing: select blog_id, blog_title, blog_content, blog_goods, blog_image, blog_read, blog_collection, blog_type, blog_remark, blog_comment, blog_source, created_time, version from bl_blog where blog_id = ? and deleted = 0 
+2020-11-05 01:05:24.692 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==> Parameters: 1324032521322803200(String)
+2020-11-05 01:05:24.743 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -<==      Total: 1
+2020-11-05 01:05:24.746 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==>  Preparing: update bl_blog set version = version + 1 ,blog_title = ? ,blog_image = ? ,blog_content = ? ,blog_type = ? ,blog_remark = ? ,blog_source = ? where blog_id = ? and version = ? 
+2020-11-05 01:05:24.749 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==> Parameters: Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 1(Integer), valu可选的限定描述符，指定使用的事务管理器(String), 百度(String), 1324032521322803200(String), null
+2020-11-05 01:05:24.854 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -<==    Updates: 0
+2020-11-05 01:05:24.937 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 336
+2020-11-05 01:05:24.938 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"更新成功！"}
+2020-11-05 01:05:24.998 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:05:25.001 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/update(String), [com.tqk.blog.pojo.BlBlog@69414344](String), 1(Integer), null, PUT(String), 336(Long), {"code":20000,"msg":"更新成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:05:25.123 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:15:29.363 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/read/1324032521322803200
+2020-11-05 01:15:29.364 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-11-05 01:15:29.366 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:15:29.367 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.read
+2020-11-05 01:15:29.367 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1324032521322803200]
+2020-11-05 01:15:29.447 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==>  Preparing: select blog_id, blog_title, blog_content, blog_goods, blog_image, blog_read, blog_collection, blog_type, blog_remark, blog_comment, blog_source, created_time, version from bl_blog where blog_id = ? and deleted = 0 
+2020-11-05 01:15:29.449 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -==> Parameters: 1324032521322803200(String)
+2020-11-05 01:15:29.487 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.getById.debug:159 -<==      Total: 1
+2020-11-05 01:15:29.489 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==>  Preparing: update bl_blog set version = version + 1 ,blog_title = ? ,blog_image = ? ,blog_content = ? ,blog_goods = ? ,blog_read = ? ,blog_collection = ? ,blog_type = ? ,blog_remark = ? ,blog_comment = ? ,blog_source = ? where blog_id = ? and version = ? 
+2020-11-05 01:15:29.490 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -==> Parameters: Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), Java(String), 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚(String), 0(Integer), 1(Integer), 0(Integer), 1(Integer), Spring中的@Transactional(rollbackFor = Exception.class)属性详解(String), 0(Integer), 百度(String), 1324032521322803200(String), 1(Integer)
+2020-11-05 01:15:29.563 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlBlogMapper.update.debug:159 -<==    Updates: 1
+2020-11-05 01:15:29.573 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-11-05 01:15:29.574 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-11-05 01:15:29.611 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-11-05 01:15:29.696 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 333
+2020-11-05 01:15:29.704 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"blogCollection":0,"blogComment":0,"blogContent":"在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚","blogGoods":0,"blogId":"1324032521322803200","blogImage":"Java","blogRead":1,"blogRemark":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogSource":"百度","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","typeName":"Java"},"msg":"操作成功！"}
+2020-11-05 01:15:29.762 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:15:29.763 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/read/1324032521322803200(String), [1324032521322803200](String), 1(Integer), null, GET(String), 333(Long), {"code":20000,"data":{"blogCollection":0,"blogComment":0,"blogContent":"在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。在@Transactional注解中如果不配置rollbackFor属性,那么事物只会在遇到RuntimeException的时候才会回滚,加上rollbackFor=Exception.class,可以让事物在遇到非运行时异常时也回滚","blogGoods":0,"blogId":"1324032521322803200","blogImage":"Java","blogRead":1,"blogRemark":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","blogSource":"百度","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","typeName":"Java"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:15:29.848 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:16:21.608 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/delete/1324032521322803200
+2020-11-05 01:16:21.609 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : DELETE
+2020-11-05 01:16:21.610 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:16:21.611 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.delete
+2020-11-05 01:16:21.612 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1324032521322803200]
+2020-11-05 01:16:21.658 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlBlogMapper.deleteById.debug:159 -==>  Preparing: update bl_blog set deleted = 1 where blog_id = ? 
+2020-11-05 01:16:21.659 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlBlogMapper.deleteById.debug:159 -==> Parameters: 1324032521322803200(String)
+2020-11-05 01:16:22.061 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlBlogMapper.deleteById.debug:159 -<==    Updates: 1
+2020-11-05 01:16:22.062 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 454
+2020-11-05 01:16:22.063 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"删除成功！"}
+2020-11-05 01:16:22.109 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:16:22.111 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/delete/1324032521322803200(String), [1324032521322803200](String), 1(Integer), null, DELETE(String), 454(Long), {"code":20000,"msg":"删除成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:16:22.204 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:17:36.378 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/save
+2020-11-05 01:17:36.380 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 01:17:36.381 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:17:36.381 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.save
+2020-11-05 01:17:36.382 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlBlog@795e0a3b]
+2020-11-05 01:17:36.462 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==>  Preparing: insert into bl_blog( blog_id, blog_title,blog_image, blog_content, blog_type, blog_remark, blog_source ) values ( ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:17:36.464 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -==> Parameters: 1324038097171820544(String), BeanUtils.copyProperties的用法(String), Java(String), BeanUtils.copyProperties(a, b);b中的存在的属性，a中一定要有，但是a中可以有多余的属性；a中与b中相同的属性都会被替换，不管是否有值；a、 b中的属性要名字相同，才能被赋值，不然的话需要手动赋值；Spring的BeanUtils的CopyProperties方法需要对应的属性有getter和setter方法；如果存在属性完全相同的内部类，但是不是同一个内部类，即分别属于各自的内部类，则spring会认为属性不同，不会copy；spring和apache的copy属性的方法源和目的参数的位置正好相反，所以导包和调用的时候都要注意一下。(String), 1(Integer), BeanUtils它提供了对java反射和自省API的包装。它里面还有很多工具类，这里我们介绍一下copyProperties。(String), 百度(String)
+2020-11-05 01:17:36.536 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlBlogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:17:36.537 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-11-05 01:17:36.538 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-11-05 01:17:36.575 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-11-05 01:17:36.578 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==>  Preparing: UPDATE bl_type SET type_name = ?,type_blog_count = ?,enable = ?,deleted = ? WHERE type_id = ? 
+2020-11-05 01:17:36.579 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==> Parameters: Java(String), 102(Integer), 1(Integer), 0(Integer), 1(Integer)
+2020-11-05 01:17:36.655 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -<==    Updates: 1
+2020-11-05 01:17:36.737 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 359
+2020-11-05 01:17:36.738 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"添加成功！"}
+2020-11-05 01:17:36.782 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:17:36.784 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/save(String), [com.tqk.blog.pojo.BlBlog@795e0a3b](String), 1(Integer), null, POST(String), 359(Long), {"code":20000,"msg":"添加成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:17:36.878 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:18:28.872 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/getTimeLine
+2020-11-05 01:18:28.873 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-11-05 01:18:28.874 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:18:28.874 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.getTimeLine
+2020-11-05 01:18:28.875 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-11-05 01:18:28.915 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getTimeLine.debug:159 -==>  Preparing: select blog_id, blog_title, created_time, date_format(created_time, '%Y-%m') as blog_month from bl_blog order by created_time desc 
+2020-11-05 01:18:28.917 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getTimeLine.debug:159 -==> Parameters: 
+2020-11-05 01:18:28.957 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getTimeLine.debug:159 -<==      Total: 2
+2020-11-05 01:18:28.959 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 87
+2020-11-05 01:18:28.964 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"list":[{"blogId":"1324038097171820544","blogMonth":"2020-11","blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33"},{"blogId":"1324032521322803200","blogMonth":"2020-11","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","createdTime":"2020-11-04 16:55:24"}],"month":"2020-11"}],"msg":"操作成功！"}
+2020-11-05 01:18:29.003 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:18:29.004 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/getTimeLine(String), [](String), 1(Integer), 	at com.tqk.blog.service.impl.BlogServiceImpl.update(BlogServiceImpl.java:75)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.update(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.update(<generated>)
+	at com.tqk.blog.controller.BlogController.update(BlogController.java:60)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.update(<generated>)
+(String), GET(String), 87(Long), {"code":20000,"data":[{"list":[{"blogId":"1324038097171820544","blogMonth":"2020-11","blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33"},{"blogId":"1324032521322803200","blogMonth":"2020-11","blogTitle":"Spring中的@Transactional(rollbackFor = Exception.class)属性详解","createdTime":"2020-11-04 16:55:24"}],"month":"2020-11"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:18:29.099 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:19:55.250 WARN  [http-nio-8080-exec-10]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-11-05 01:20:14.414 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/recomRead
+2020-11-05 01:20:14.415 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-11-05 01:20:14.415 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:20:14.415 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.recomRead
+2020-11-05 01:20:14.416 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-11-05 01:20:14.484 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlBlogMapper.recomRead.debug:159 -==>  Preparing: select blog_id, blog_title, blog_goods, blog_read, blog_collection, blog_comment, created_time,type_name from bl_blog as b inner join bl_type as t on type_id = blog_type where t.deleted = 0 and b.deleted = 0 order by (blog_read + blog_goods) desc limit 5 
+2020-11-05 01:20:14.486 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlBlogMapper.recomRead.debug:159 -==> Parameters: 
+2020-11-05 01:20:14.560 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlBlogMapper.recomRead.debug:159 -<==      Total: 1
+2020-11-05 01:20:14.561 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 147
+2020-11-05 01:20:14.562 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"blogCollection":0,"blogComment":0,"blogGoods":0,"blogId":"1324038097171820544","blogRead":0,"blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33","typeName":"Java"}],"msg":"操作成功！"}
+2020-11-05 01:20:14.615 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:20:14.617 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/recomRead(String), [](String), 1(Integer), null, GET(String), 147(Long), {"code":20000,"data":[{"blogCollection":0,"blogComment":0,"blogGoods":0,"blogId":"1324038097171820544","blogRead":0,"blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33","typeName":"Java"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:20:14.713 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-11-05 01:22:21.357 WARN  [http-nio-8080-exec-5]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2020-11-05 01:24:05.464 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /blog/getByPage
+2020-11-05 01:24:05.465 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-11-05 01:24:05.465 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-11-05 01:24:05.466 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.BlogController.getByPage
+2020-11-05 01:24:05.466 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[Page(currentPage=1, pageSize=20, totalPage=0, totalCount=0, list=null, params={}, sortColumn=null, sortMethod=asc)]
+2020-11-05 01:24:05.552 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getByPage.debug:159 -==>  Preparing: select blog_id, blog_title, blog_image, blog_goods, blog_read, blog_collection, blog_remark, blog_comment, blog_source, created_time, update_time,type_name from bl_blog as b inner join bl_type as t on type_id = blog_type where t.deleted = 0 and b.deleted = 0 limit ?, ? 
+2020-11-05 01:24:05.553 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getByPage.debug:159 -==> Parameters: 0(Integer), 20(Integer)
+2020-11-05 01:24:05.593 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getByPage.debug:159 -<==      Total: 1
+2020-11-05 01:24:05.595 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getCountByPage.debug:159 -==>  Preparing: select count(*) from bl_blog as b inner join bl_type as t on type_id = blog_type where t.deleted = 0 and b.deleted = 0 
+2020-11-05 01:24:05.597 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getCountByPage.debug:159 -==> Parameters: 
+2020-11-05 01:24:05.634 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlBlogMapper.getCountByPage.debug:159 -<==      Total: 1
+2020-11-05 01:24:05.710 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 246
+2020-11-05 01:24:05.721 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"currentPage":1,"index":0,"list":[{"blogCollection":0,"blogComment":0,"blogGoods":0,"blogId":"1324038097171820544","blogImage":"Java","blogRead":0,"blogRemark":"BeanUtils它提供了对java反射和自省API的包装。它里面还有很多工具类，这里我们介绍一下copyProperties。","blogSource":"百度","blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33","typeName":"Java","updateTime":"2020-11-04 17:17:33"}],"pageSize":20,"params":{},"sortMethod":"asc","totalCount":1,"totalPage":1},"msg":"操作成功！"}
+2020-11-05 01:24:05.760 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-05 01:24:05.761 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /blog/getByPage(String), [Page(currentPage=1, pageSize=20, totalPage=0, totalCount=0, list=null, params={}, sortColumn=null, sortMethod=asc)](String), 1(Integer), 	at com.tqk.blog.service.impl.BlogServiceImpl.update(BlogServiceImpl.java:75)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$95064f5.update(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$FastClassBySpringCGLIB$$c89e2edd.invoke(<generated>)
+	at com.tqk.blog.service.impl.BlogServiceImpl$$EnhancerBySpringCGLIB$$a1776771.update(<generated>)
+	at com.tqk.blog.controller.BlogController.update(BlogController.java:60)
+	at com.tqk.blog.controller.BlogController$$FastClassBySpringCGLIB$$a4fc5e31.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.BlogController$$EnhancerBySpringCGLIB$$8801d724.update(<generated>)
+(String), POST(String), 246(Long), {"code":20000,"data":{"currentPage":1,"index":0,"list":[{"blogCollection":0,"blogComment":0,"blogGoods":0,"blogId":"1324038097171820544","blogImage":"Java","blogRead":0,"blogRemark":"BeanUtils它提供了对java反射和自省API的包装。它里面还有很多工具类，这里我们介绍一下copyProperties。","blogSource":"百度","blogTitle":"BeanUtils.copyProperties的用法","createdTime":"2020-11-04 17:17:33","typeName":"Java","updateTime":"2020-11-04 17:17:33"}],"pageSize":20,"params":{},"sortMethod":"asc","totalCount":1,"totalPage":1},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-11-05 01:24:05.843 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

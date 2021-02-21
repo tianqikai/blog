@@ -1,0 +1,183 @@
+2020-10-25 00:51:04.287 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-25 00:51:33.496 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-25 00:51:33.533 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-25 00:51:33.595 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-25 00:51:33.770 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:51:33.777 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@1ca56cff](String), 1(Integer), null, POST(String), 212(Long), {"code":20000,"data":{"token":"8B24FF6D58B2466416C13875D5A56467"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:51:33.853 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:53:54.619 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_link ( link_id,link_name,link_url,created_time,update_time,version,deleted ) VALUES( ?,?,?,?,?,?,? ) 
+2020-10-25 00:53:54.620 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==> Parameters: 1(Integer), 百度(String), https://baidu.com/(String), null, null, null, null
+2020-10-25 00:53:54.866 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:53:54.868 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/save(String), [com.tqk.blog.pojo.BlLink@7e847a59](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+; Column 'created_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:53:54.947 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:55:16.075 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_link ( link_id,link_name,link_url,created_time,update_time,version,deleted ) VALUES( ?,?,?,?,?,?,? ) 
+2020-10-25 00:55:16.077 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==> Parameters: 1(Integer), 百度(String), https://baidu.com/(String), null, null, 1(Integer), null
+2020-10-25 00:55:16.187 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:55:16.189 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/save(String), [com.tqk.blog.pojo.BlLink@61b01c53](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+; Column 'created_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:55:16.269 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:55:38.870 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_link ( link_id,link_name,link_url,created_time,update_time,version,deleted ) VALUES( ?,?,?,?,?,?,? ) 
+2020-10-25 00:55:38.873 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==> Parameters: 1(Integer), 百度(String), https://baidu.com/(String), 1970-01-19 21:25:58.501(Timestamp), null, 1(Integer), null
+2020-10-25 00:55:38.985 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:55:38.987 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/save(String), [com.tqk.blog.pojo.BlLink@6473a147](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'update_time' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'update_time' cannot be null
+; Column 'update_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'update_time' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'update_time' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:55:39.072 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:56:02.338 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_link ( link_id,link_name,link_url,created_time,update_time,version,deleted ) VALUES( ?,?,?,?,?,?,? ) 
+2020-10-25 00:56:02.340 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==> Parameters: 1(Integer), 百度(String), https://baidu.com/(String), 1970-01-19 21:25:58.501(Timestamp), 1970-01-19 21:25:58.501(Timestamp), 1(Integer), null
+2020-10-25 00:56:02.446 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:56:02.449 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/save(String), [com.tqk.blog.pojo.BlLink@3ef2bfbe](String), 0(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'deleted' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'deleted' cannot be null
+; Column 'deleted' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'deleted' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'deleted' cannot be null
+(String), POST(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:56:02.526 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:56:22.167 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_link ( link_id,link_name,link_url,created_time,update_time,version,deleted ) VALUES( ?,?,?,?,?,?,? ) 
+2020-10-25 00:56:22.169 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -==> Parameters: 1(Integer), 百度(String), https://baidu.com/(String), 1970-01-19 21:25:58.501(Timestamp), 1970-01-19 21:25:58.501(Timestamp), 1(Integer), 0(Integer)
+2020-10-25 00:56:22.249 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLinkMapper.insert.debug:159 -<==    Updates: 1
+2020-10-25 00:56:22.294 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:56:22.297 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/save(String), [com.tqk.blog.pojo.BlLink@a42346f](String), 1(Integer), null, POST(String), 122(Long), {"code":20000,"msg":"添加成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:56:22.392 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:57:26.799 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLinkMapper.updateByIdAndVersion.debug:159 -==>  Preparing: update bl_link set version = version+1 ,link_name = ? ,link_url = ? where link_id = ? and version = ? 
+2020-10-25 00:57:26.800 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLinkMapper.updateByIdAndVersion.debug:159 -==> Parameters: 百度一下(String), https://baidu.com/(String), 1(Integer), 1(Integer)
+2020-10-25 00:57:26.905 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLinkMapper.updateByIdAndVersion.debug:159 -<==    Updates: 1
+2020-10-25 00:57:26.946 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:57:26.948 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/update(String), [com.tqk.blog.pojo.BlLink@26ebf4ee](String), 1(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+; Column 'created_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+(String), PUT(String), 151(Long), {"code":20000,"msg":"修改成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:57:27.022 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:58:03.441 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLinkMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT link_id,link_name,link_url,created_time,update_time,version,deleted FROM bl_link WHERE link_id = ? 
+2020-10-25 00:58:03.443 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLinkMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-10-25 00:58:03.494 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLinkMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-25 00:58:03.570 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:58:03.573 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/get/1(String), [1](String), 1(Integer), org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+### The error may involve com.tqk.blog.mapper.BlLinkMapper.insert-Inline
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+; Column 'created_time' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+	at com.tqk.blog.service.impl.LinkServiceImpl.save(LinkServiceImpl.java:31)
+	at com.tqk.blog.controller.LinkController.save(LinkController.java:31)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.save(<generated>)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Column 'created_time' cannot be null
+(String), GET(String), 97(Long), {"code":20000,"data":{"createdTime":1603559000,"deleted":0,"linkId":1,"linkName":"百度一下","linkUrl":"https://baidu.com/","updateTime":1603529844000,"version":2},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:58:04.061 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:58:14.882 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==>  Preparing: select link_id, link_name, link_url, version from BlLink where delete=0 
+2020-10-25 00:58:14.882 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==> Parameters: 
+2020-10-25 00:58:14.951 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:58:14.953 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/list(String), [](String), 0(Integer), org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete=0' at line 5
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete=0' at line 5
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete=0' at line 5
+	at com.tqk.blog.service.impl.LinkServiceImpl.getAll(LinkServiceImpl.java:46)
+	at com.tqk.blog.controller.LinkController.list(LinkController.java:61)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$a22fc108.list(<generated>)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete=0' at line 5
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:58:15.053 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:59:03.020 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-25 00:59:12.907 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-25 00:59:12.942 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-25 00:59:13.009 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-25 00:59:13.174 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:59:13.178 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@12661cb](String), 1(Integer), null, POST(String), 208(Long), {"code":20000,"data":{"token":"52EC99B6280080182D78A5D24F24D03B"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:59:13.271 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 00:59:37.222 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==>  Preparing: select link_id, link_name, link_url, version from BlLink where delete='0' 
+2020-10-25 00:59:37.223 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==> Parameters: 
+2020-10-25 00:59:37.413 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 00:59:37.415 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/list(String), [](String), 0(Integer), org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete='0'' at line 5
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete='0'' at line 5
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete='0'' at line 5
+	at com.tqk.blog.service.impl.LinkServiceImpl.getAll(LinkServiceImpl.java:46)
+	at com.tqk.blog.controller.LinkController.list(LinkController.java:61)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$1f4db6aa.list(<generated>)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete='0'' at line 5
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 00:59:37.503 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 01:00:46.719 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-25 01:00:55.894 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-25 01:00:55.939 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-25 01:00:56.016 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-25 01:00:56.183 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 01:00:56.186 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@6853a0fb](String), 1(Integer), null, POST(String), 237(Long), {"code":20000,"data":{"token":"A06FA0E2A2A4C49DA7F1063C8B30DE5A"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 01:00:56.276 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 01:01:12.726 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==>  Preparing: select link_id, link_name, link_url, version from BlLink where deleted='0' 
+2020-10-25 01:01:12.727 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==> Parameters: 
+2020-10-25 01:01:12.932 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 01:01:12.934 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/list(String), [](String), 0(Integer), org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'blog.BlLink' doesn't exist
+### Cause: java.sql.SQLSyntaxErrorException: Table 'blog.BlLink' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'blog.BlLink' doesn't exist
+	at com.tqk.blog.service.impl.LinkServiceImpl.getAll(LinkServiceImpl.java:46)
+	at com.tqk.blog.controller.LinkController.list(LinkController.java:61)
+	at com.tqk.blog.controller.LinkController$$FastClassBySpringCGLIB$$f7fe5089.invoke(<generated>)
+	at com.tqk.blog.aspect.RequestAspect.doAround(RequestAspect.java:65)
+	at com.tqk.blog.controller.LinkController$$EnhancerBySpringCGLIB$$345e1037.list(<generated>)
+Caused by: java.sql.SQLSyntaxErrorException: Table 'blog.BlLink' doesn't exist
+(String), GET(String), 0(Long), null, 0:0:0:0:0:0:0:1(String)
+2020-10-25 01:01:13.018 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 01:01:37.237 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-25 01:01:46.030 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-25 01:01:46.064 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-25 01:01:46.130 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-25 01:01:46.262 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 01:01:46.265 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@6378937b](String), 1(Integer), null, POST(String), 201(Long), {"code":20000,"data":{"token":"BB9E6377103A8D493AEF48AD39447DB7"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 01:01:46.353 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-25 01:01:59.752 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==>  Preparing: select link_id, link_name, link_url, version from bl_link where deleted='0' 
+2020-10-25 01:01:59.753 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -==> Parameters: 
+2020-10-25 01:01:59.792 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLinkMapper.getAll.debug:159 -<==      Total: 1
+2020-10-25 01:01:59.839 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-25 01:01:59.842 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /link/list(String), [](String), 1(Integer), null, GET(String), 90(Long), {"code":20000,"data":[{"linkId":1,"linkName":"百度一下","linkUrl":"https://baidu.com/","version":2}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-25 01:01:59.924 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

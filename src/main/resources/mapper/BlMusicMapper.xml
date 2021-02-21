@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tqk.blog.mapper.BlMusicMapper" >
+  <resultMap id="BaseResultMap" type="com.tqk.blog.pojo.BlMusic" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="artist" property="artist" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="cover" property="cover" jdbcType="VARCHAR" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="enable" property="enable" jdbcType="INTEGER" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <result column="lrc" property="lrc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <select id="getByPage" parameterType="com.tqk.blog.utils.Page" resultMap="BaseResultMap">
+    select
+    id,
+    name,
+    artist,
+    url,
+    cover,
+    created_time,
+    enable
+    from bl_music
+    where
+    deleted = 0
+    <if test="params.name!=null and params.name!=''">
+      and name like CONCAT('%',#{params.name},'%')
+    </if>
+    <if test="params.artist!=null and params.artist!=''">
+      and artist like CONCAT('%',#{params.artist},'%')
+    </if>
+    <if test="params.enabled!=null and params.enabled!=''">
+      and enable = #{params.enabled}
+    </if>
+    <if test="sortColumn!=null and sortColumn!=''">
+      order by ${sortColumn} ${sortMethod}
+    </if>
+    limit #{index}, #{pageSize}
+  </select>
+  <select id="getCountByPage" parameterType="com.tqk.blog.utils.Page" resultType="java.lang.Integer">
+    select
+    count(*)
+    from bl_music
+    where
+    deleted = 0
+    <if test="params.name!=null and params.name!=''">
+      and name like CONCAT('%',#{params.name},'%')
+    </if>
+    <if test="params.artist!=null and params.artist!=''">
+      and artist like CONCAT('%',#{params.artist},'%')
+    </if>
+    <if test="params.enabled!=null and params.enabled!=''">
+      and enable = #{params.enabled}
+    </if>
+  </select>
+</mapper>

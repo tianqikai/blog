@@ -1,0 +1,7 @@
+2020-11-16 22:05:51.982 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-11-16 22:20:30.092 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-11-16 22:20:30.135 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-11-16 22:20:30.193 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-11-16 22:20:31.996 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-11-16 22:20:32.002 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@465ff393](String), 1(Integer), null, POST(String), 248(Long), {"code":20000,"data":{"token":"974C87ADB04BFBDBAFBD6CCE27D3A77E"},"msg":"操作成功！"}(String), 192.168.101.29(String)
+2020-11-16 22:20:32.094 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

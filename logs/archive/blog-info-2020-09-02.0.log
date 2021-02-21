@@ -1,0 +1,365 @@
+2020-09-02 23:17:39.939 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 5024 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:17:39.946 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:17:41.450 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:17:41.663 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 205ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:17:42.349 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:17:42.777 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:17:42.794 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:17:42.796 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:17:42.797 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:17:43.011 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:17:43.012 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 3011 ms
+2020-09-02 23:17:43.264 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:17:45.516 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:17:46.020 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:17:46.503 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:17:46.841 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:17:46.870 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:17:46.873 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 7.46 seconds (JVM running for 8.006)
+2020-09-02 23:17:47.559 INFO  [cluster-ClusterId{value='5f4fb79a74cb52086effede3', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:19:58.690 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8172 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:19:58.694 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:19:59.562 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:19:59.602 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 34ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:20:00.008 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:20:00.401 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:20:00.415 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:20:00.416 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:20:00.417 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:20:00.643 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:20:00.643 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1872 ms
+2020-09-02 23:20:00.854 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:20:03.104 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:20:03.589 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:20:04.050 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:20:04.341 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:20:04.361 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:20:04.364 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.259 seconds (JVM running for 6.759)
+2020-09-02 23:20:05.089 INFO  [cluster-ClusterId{value='5f4fb824e9a8fb3900dc89e6', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:25:42.682 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 1764 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:25:42.687 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:25:43.560 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:25:43.610 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 42ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:25:44.045 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:25:44.415 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:25:44.426 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:25:44.427 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:25:44.427 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:25:44.646 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:25:44.646 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1901 ms
+2020-09-02 23:25:44.863 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:25:47.143 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:25:47.609 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:25:48.069 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:25:48.378 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:25:48.409 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:25:48.411 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.334 seconds (JVM running for 6.846)
+2020-09-02 23:25:49.124 INFO  [cluster-ClusterId{value='5f4fb97c5146545cad5e1872', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:29:14.917 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 6020 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:29:14.921 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:29:15.813 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:29:15.858 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 37ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:29:16.260 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:29:16.673 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:29:16.687 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:29:16.688 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:29:16.688 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:29:16.884 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:29:16.884 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1893 ms
+2020-09-02 23:29:17.100 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:29:19.296 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:29:19.806 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:29:20.356 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:29:20.644 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:29:20.673 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:29:20.676 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.405 seconds (JVM running for 6.92)
+2020-09-02 23:29:21.400 INFO  [cluster-ClusterId{value='5f4fba502dcf336b2dd07cc7', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:30:15.442 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 7480 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:30:15.446 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:30:16.245 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:30:16.297 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 44ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:30:16.742 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:30:17.085 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:30:17.095 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:30:17.096 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:30:17.096 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:30:17.319 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:30:17.319 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1808 ms
+2020-09-02 23:30:17.514 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:30:19.697 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:30:20.181 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:30:20.675 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:30:21.025 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:30:21.050 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:30:21.052 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.247 seconds (JVM running for 6.748)
+2020-09-02 23:30:21.731 INFO  [cluster-ClusterId{value='5f4fba8cc8da0e2ddc94da2f', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:31:18.463 INFO  [http-nio-1000-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:31:18.464 INFO  [http-nio-1000-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:31:18.475 INFO  [http-nio-1000-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 11 ms
+2020-09-02 23:35:36.827 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8520 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:35:36.832 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:35:38.183 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:35:38.240 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 50ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:35:38.608 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:35:39.024 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:35:39.036 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:35:39.037 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:35:39.037 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:35:39.247 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:35:39.248 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2345 ms
+2020-09-02 23:35:39.434 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:35:41.626 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:35:42.083 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:35:42.606 INFO  [main]org.mongodb.driver.cluster.info:71 -Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-09-02 23:35:42.923 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:35:42.946 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:35:42.949 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.856 seconds (JVM running for 7.393)
+2020-09-02 23:35:43.654 INFO  [cluster-ClusterId{value='5f4fbbce8e2d247d8234aaad', description='null'}-localhost:27017]org.mongodb.driver.cluster.info:76 -Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2020-09-02 23:43:48.654 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 4400 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:43:48.658 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:43:49.519 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:43:49.571 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 44ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:43:49.985 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:43:50.425 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 1000 (http)
+2020-09-02 23:43:50.442 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:43:50.443 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:43:50.443 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:43:50.599 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:43:50.600 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1880 ms
+2020-09-02 23:43:50.900 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:43:53.073 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:43:53.531 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:43:53.778 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-1000"]
+2020-09-02 23:43:53.801 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 1000 (http) with context path ''
+2020-09-02 23:43:53.804 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.749 seconds (JVM running for 6.265)
+2020-09-02 23:44:19.282 INFO  [http-nio-1000-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:44:19.282 INFO  [http-nio-1000-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:44:19.289 INFO  [http-nio-1000-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 6 ms
+2020-09-02 23:44:45.543 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 6344 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:44:45.547 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:44:46.427 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:44:46.469 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 34ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:44:46.844 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:44:47.286 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:44:47.300 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:44:47.301 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:44:47.302 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:44:47.516 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:44:47.517 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1896 ms
+2020-09-02 23:44:47.782 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:44:49.999 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:44:50.451 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:44:50.694 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:44:50.714 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:44:50.717 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.692 seconds (JVM running for 6.181)
+2020-09-02 23:45:05.767 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:45:05.767 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:45:05.773 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 6 ms
+2020-09-02 23:46:54.168 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 7772 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:46:54.173 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:46:54.992 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:46:55.032 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 34ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:46:55.465 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:46:55.854 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:46:55.865 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:46:55.866 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:46:55.866 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:46:55.993 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:46:55.994 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1738 ms
+2020-09-02 23:46:56.296 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:46:58.414 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:46:58.886 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:46:59.151 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:46:59.176 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:46:59.179 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.633 seconds (JVM running for 6.129)
+2020-09-02 23:47:06.751 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:47:06.752 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:47:06.759 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 7 ms
+2020-09-02 23:49:10.274 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 9188 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:49:10.278 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:49:11.213 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:49:11.275 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 53ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:49:11.640 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:49:12.024 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:49:12.039 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:49:12.040 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:49:12.040 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:49:12.212 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:49:12.213 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1880 ms
+2020-09-02 23:49:12.522 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:49:14.623 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:49:15.100 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:49:15.379 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:49:15.446 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:49:15.449 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.81 seconds (JVM running for 6.341)
+2020-09-02 23:49:19.921 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:49:19.921 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:49:19.927 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 5 ms
+2020-09-02 23:53:12.086 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 1840 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:53:12.090 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:53:13.070 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:53:13.155 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 78ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:53:13.539 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:53:13.969 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:53:13.979 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:53:13.980 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:53:13.980 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:53:14.115 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:53:14.115 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1837 ms
+2020-09-02 23:53:14.391 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:53:16.538 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:53:16.989 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:53:17.222 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:53:17.247 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:53:17.250 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.708 seconds (JVM running for 6.221)
+2020-09-02 23:53:34.919 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:53:34.920 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:53:34.927 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 7 ms
+2020-09-02 23:55:15.890 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 1224 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:55:15.902 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:55:17.101 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:55:17.159 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 49ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:55:17.553 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:55:17.934 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:55:17.948 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:55:17.949 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:55:17.949 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:55:18.093 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:55:18.093 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 2107 ms
+2020-09-02 23:55:18.397 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:55:20.572 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:55:21.052 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:55:21.323 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:55:21.357 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:55:21.359 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 6.201 seconds (JVM running for 6.714)
+2020-09-02 23:55:31.704 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:55:31.704 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:55:31.709 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 5 ms
+2020-09-02 23:56:26.933 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 8624 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-09-02 23:56:27.100 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-09-02 23:56:27.985 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-09-02 23:56:28.037 INFO  [main]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 45ms. Found 0 MongoDB repository interfaces.
+2020-09-02 23:56:28.369 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-09-02 23:56:28.744 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8888 (http)
+2020-09-02 23:56:28.760 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:56:28.761 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-09-02 23:56:28.761 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-09-02 23:56:28.904 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-09-02 23:56:28.904 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 1704 ms
+2020-09-02 23:56:29.171 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-09-02 23:56:31.404 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-09-02 23:56:31.896 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-02 23:56:32.162 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8888"]
+2020-09-02 23:56:32.185 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8888 (http) with context path ''
+2020-09-02 23:56:32.187 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 5.791 seconds (JVM running for 6.278)
+2020-09-02 23:56:49.344 INFO  [http-nio-8888-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-02 23:56:49.345 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-09-02 23:56:49.352 INFO  [http-nio-8888-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 7 ms

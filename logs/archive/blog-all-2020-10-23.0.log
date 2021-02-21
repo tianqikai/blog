@@ -1,0 +1,360 @@
+2020-10-23 00:14:20.202 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /BlAdmin/login
+2020-10-23 00:14:20.209 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-10-23 00:14:20.210 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:14:20.212 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.AdminController.login
+2020-10-23 00:14:20.213 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlAdmin@478bff7e]
+2020-10-23 00:14:20.256 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-23 00:14:20.260 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-23 00:14:20.300 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-23 00:14:20.302 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 100
+2020-10-23 00:14:20.303 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"token":"43FDCFF17C5A11EE555869B3C221B32E"},"msg":"操作成功！"}
+2020-10-23 00:14:20.350 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:14:20.352 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@478bff7e](String), 1(Integer), null, POST(String), 100(Long), {"code":20000,"data":{"token":"43FDCFF17C5A11EE555869B3C221B32E"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:14:20.443 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:14:38.940 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/save
+2020-10-23 00:14:38.941 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-10-23 00:14:38.942 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:14:38.943 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.save
+2020-10-23 00:14:38.944 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlType@719b0bf7]
+2020-10-23 00:14:39.031 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectOne.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? AND type_name = ? AND type_blog_count = ? AND enable = ? AND deleted = ? 
+2020-10-23 00:14:39.033 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectOne.debug:159 -==> Parameters: 1(Integer), Java(String), 0(Integer), 0(Integer), 0(Integer)
+2020-10-23 00:14:39.077 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.selectOne.debug:159 -<==      Total: 0
+2020-10-23 00:14:39.124 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.insert.debug:159 -==>  Preparing: INSERT INTO bl_type ( type_id,type_name,type_blog_count,enable,deleted ) VALUES( ?,?,?,?,? ) 
+2020-10-23 00:14:39.126 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.insert.debug:159 -==> Parameters: 1(Integer), Java(String), 0(Integer), 0(Integer), 0(Integer)
+2020-10-23 00:14:39.214 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlTypeMapper.insert.debug:159 -<==    Updates: 1
+2020-10-23 00:14:39.215 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 275
+2020-10-23 00:14:39.215 INFO  [http-nio-8080-exec-2]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"添加成功！"}
+2020-10-23 00:14:39.254 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:14:39.256 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/save(String), [com.tqk.blog.pojo.BlType@719b0bf7](String), 1(Integer), null, POST(String), 275(Long), {"code":20000,"msg":"添加成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:14:39.703 DEBUG [http-nio-8080-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:21:59.497 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/listBack
+2020-10-23 00:21:59.498 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 00:21:59.499 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:21:59.500 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.list
+2020-10-23 00:21:59.500 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 00:21:59.539 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type 
+2020-10-23 00:21:59.540 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -==> Parameters: 
+2020-10-23 00:21:59.591 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -<==      Total: 1
+2020-10-23 00:21:59.593 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 96
+2020-10-23 00:21:59.602 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"deleted":0,"enable":0,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}
+2020-10-23 00:21:59.643 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:21:59.645 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/listBack(String), [](String), 1(Integer), null, GET(String), 96(Long), {"code":20000,"data":[{"deleted":0,"enable":0,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:21:59.726 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:23:05.536 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/getList
+2020-10-23 00:23:05.537 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 00:23:05.537 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:23:05.538 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getList
+2020-10-23 00:23:05.538 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 00:23:05.607 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE ( enable = ? and deleted = ? ) 
+2020-10-23 00:23:05.608 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==> Parameters: 1(Integer), 0(Integer)
+2020-10-23 00:23:05.644 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -<==      Total: 0
+2020-10-23 00:23:05.645 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 109
+2020-10-23 00:23:05.645 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[],"msg":"操作成功！"}
+2020-10-23 00:23:05.682 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:23:05.683 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/getList(String), [](String), 1(Integer), null, GET(String), 109(Long), {"code":20000,"data":[],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:23:05.773 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:25:37.961 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 360 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-23 00:25:37.966 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-23 00:25:37.967 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-23 00:25:39.278 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.405 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.tqk.blog.config.ShiroConfig$$EnhancerBySpringCGLIB$$cec6d3bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.479 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'mybatis-tk.mybatis.mapper.autoconfigure.MybatisProperties' of type [tk.mybatis.mapper.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.497 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration' of type [tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$17c456eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.503 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$7b7fa4c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.509 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-23 00:25:39.579 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.601 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:39.630 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.261 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-23 00:25:42.263 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.369 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.691 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.701 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.787 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.797 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [com.sun.proxy.$Proxy86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.848 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminServiceImpl' of type [com.tqk.blog.service.impl.AdminServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:42.850 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminRealm' of type [com.tqk.blog.realm.AdminRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:43.324 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:43.356 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 00:25:43.413 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 00:25:43.607 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 00:25:43.712 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-10-23 00:25:43.724 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 00:25:43.724 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-23 00:25:43.725 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-23 00:25:43.726 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-23 00:25:43.861 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-23 00:25:43.862 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 5832 ms
+2020-10-23 00:25:44.932 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-23 00:25:45.421 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-10-23 00:25:45.451 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-23 00:25:45.456 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 8.156 seconds (JVM running for 8.653)
+2020-10-23 00:25:48.986 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-23 00:25:48.986 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-10-23 00:25:49.005 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 18 ms
+2020-10-23 00:26:01.748 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /BlAdmin/login
+2020-10-23 00:26:01.750 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-10-23 00:26:01.753 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:26:01.756 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.AdminController.login
+2020-10-23 00:26:01.756 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlAdmin@658041]
+2020-10-23 00:26:01.848 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-23 00:26:01.883 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-23 00:26:01.945 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-23 00:26:01.952 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 204
+2020-10-23 00:26:02.036 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"token":"15E94A75E948C2D90668EF8D698F18D8"},"msg":"操作成功！"}
+2020-10-23 00:26:02.073 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:26:02.077 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@658041](String), 1(Integer), null, POST(String), 204(Long), {"code":20000,"data":{"token":"15E94A75E948C2D90668EF8D698F18D8"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:26:02.158 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:26:22.085 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/getList
+2020-10-23 00:26:22.086 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 00:26:22.087 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:26:22.088 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getList
+2020-10-23 00:26:22.088 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 00:26:22.178 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE ( enable = ? and deleted = ? ) 
+2020-10-23 00:26:22.180 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==> Parameters: 1(Integer), 0(Integer)
+2020-10-23 00:26:22.214 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -<==      Total: 0
+2020-10-23 00:26:22.215 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 130
+2020-10-23 00:26:22.218 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[],"msg":"操作成功！"}
+2020-10-23 00:26:22.258 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:26:22.261 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/getList(String), [](String), 1(Integer), null, GET(String), 130(Long), {"code":20000,"data":[],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:26:22.341 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 00:26:55.022 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/getList
+2020-10-23 00:26:55.024 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 00:26:55.025 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 00:26:55.026 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getList
+2020-10-23 00:26:55.027 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 00:26:55.066 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE ( enable = ? and deleted = ? ) 
+2020-10-23 00:26:55.068 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==> Parameters: 1(Integer), 0(Integer)
+2020-10-23 00:26:55.104 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -<==      Total: 1
+2020-10-23 00:26:55.105 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 83
+2020-10-23 00:26:55.112 INFO  [http-nio-8080-exec-6]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}
+2020-10-23 00:26:55.148 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 00:26:55.150 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/getList(String), [](String), 1(Integer), null, GET(String), 83(Long), {"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 00:26:55.229 DEBUG [http-nio-8080-exec-6]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:23:09.885 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 9128 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-23 22:23:09.890 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-23 22:23:09.890 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-23 22:23:11.487 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.683 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.tqk.blog.config.ShiroConfig$$EnhancerBySpringCGLIB$$52bcecfe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.767 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'mybatis-tk.mybatis.mapper.autoconfigure.MybatisProperties' of type [tk.mybatis.mapper.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.784 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration' of type [tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$9bba702c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.789 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$ff75be05] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.795 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-23 22:23:11.868 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.887 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:11.917 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:14.526 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-23 22:23:14.527 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:14.626 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:14.987 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:14.995 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.076 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.085 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [com.sun.proxy.$Proxy86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.159 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminServiceImpl' of type [com.tqk.blog.service.impl.AdminServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.161 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminRealm' of type [com.tqk.blog.realm.AdminRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.691 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.717 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 22:23:15.770 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 22:23:15.964 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 22:23:16.089 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-10-23 22:23:16.109 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 22:23:16.110 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-23 22:23:16.111 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-23 22:23:16.111 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-23 22:23:16.261 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-23 22:23:16.261 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 6189 ms
+2020-10-23 22:23:17.333 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-23 22:23:17.780 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-10-23 22:23:17.812 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-23 22:23:17.815 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 8.628 seconds (JVM running for 9.193)
+2020-10-23 22:23:50.979 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-23 22:23:50.980 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-10-23 22:23:50.996 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 16 ms
+2020-10-23 22:28:17.967 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /BlAdmin/login
+2020-10-23 22:28:17.969 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-10-23 22:28:17.971 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:28:17.973 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.AdminController.login
+2020-10-23 22:28:17.974 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlAdmin@3110db19]
+2020-10-23 22:28:18.062 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-23 22:28:18.098 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-23 22:28:18.165 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-23 22:28:18.173 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 206
+2020-10-23 22:28:18.280 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"token":"9AD637B7EF4A5284C7C669E86771E665"},"msg":"操作成功！"}
+2020-10-23 22:28:18.325 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:28:18.333 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@3110db19](String), 1(Integer), null, POST(String), 206(Long), {"code":20000,"data":{"token":"9AD637B7EF4A5284C7C669E86771E665"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:28:18.420 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:28:45.690 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/listBack
+2020-10-23 22:28:45.692 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 22:28:45.693 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:28:45.694 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.list
+2020-10-23 22:28:45.695 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 22:28:45.745 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type 
+2020-10-23 22:28:45.745 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -==> Parameters: 
+2020-10-23 22:28:45.785 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.selectAll.debug:159 -<==      Total: 1
+2020-10-23 22:28:45.787 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 97
+2020-10-23 22:28:45.796 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}
+2020-10-23 22:28:45.841 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:28:45.844 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/listBack(String), [](String), 1(Integer), null, GET(String), 97(Long), {"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:28:45.933 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:29:37.301 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/getList
+2020-10-23 22:29:37.302 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 22:29:37.302 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:29:37.303 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getList
+2020-10-23 22:29:37.303 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[]
+2020-10-23 22:29:37.390 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE ( enable = ? and deleted = ? ) 
+2020-10-23 22:29:37.391 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -==> Parameters: 1(Integer), 0(Integer)
+2020-10-23 22:29:37.431 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlTypeMapper.selectByExample.debug:159 -<==      Total: 1
+2020-10-23 22:29:37.433 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 132
+2020-10-23 22:29:37.434 INFO  [http-nio-8080-exec-10]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}
+2020-10-23 22:29:37.478 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:29:37.482 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/getList(String), [](String), 1(Integer), null, GET(String), 132(Long), {"code":20000,"data":[{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":1,"typeName":"Java"}],"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:29:37.566 DEBUG [http-nio-8080-exec-10]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:54:52.087 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/update
+2020-10-23 22:54:52.088 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : PUT
+2020-10-23 22:54:52.088 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:54:52.089 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.update
+2020-10-23 22:54:52.090 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlType@46f1c1c6]
+2020-10-23 22:54:52.133 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==>  Preparing: UPDATE bl_type SET type_name = ?,type_blog_count = ?,enable = ?,deleted = ? WHERE type_id = ? 
+2020-10-23 22:54:52.134 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==> Parameters: Java(String), 100(Integer), 0(Integer), 0(Integer), 1(Integer)
+2020-10-23 22:54:52.216 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -<==    Updates: 1
+2020-10-23 22:54:52.217 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 130
+2020-10-23 22:54:52.218 INFO  [http-nio-8080-exec-7]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"更新成功！"}
+2020-10-23 22:54:52.260 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:54:52.261 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/update(String), [com.tqk.blog.pojo.BlType@46f1c1c6](String), 1(Integer), null, PUT(String), 130(Long), {"code":20000,"msg":"更新成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:54:52.351 DEBUG [http-nio-8080-exec-7]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:57:44.769 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/get/1
+2020-10-23 22:57:44.770 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 22:57:44.770 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:57:44.771 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getById
+2020-10-23 22:57:44.771 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1]
+2020-10-23 22:57:44.814 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-10-23 22:57:44.815 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-10-23 22:57:44.854 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-23 22:57:44.854 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 85
+2020-10-23 22:57:44.855 INFO  [http-nio-8080-exec-1]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"deleted":0,"enable":0,"typeBlogCount":100,"typeId":1,"typeName":"Java"},"msg":"操作成功！"}
+2020-10-23 22:57:44.894 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:57:44.895 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/get/1(String), [1](String), 1(Integer), null, GET(String), 85(Long), {"code":20000,"data":{"deleted":0,"enable":0,"typeBlogCount":100,"typeId":1,"typeName":"Java"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:57:44.981 DEBUG [http-nio-8080-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:57:49.924 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/get/1
+2020-10-23 22:57:49.925 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 22:57:49.926 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:57:49.927 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getById
+2020-10-23 22:57:49.928 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1]
+2020-10-23 22:57:49.974 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-10-23 22:57:49.975 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-10-23 22:57:50.022 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-23 22:57:50.023 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 99
+2020-10-23 22:57:50.023 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"deleted":0,"enable":0,"typeBlogCount":100,"typeId":1,"typeName":"Java"},"msg":"操作成功！"}
+2020-10-23 22:57:50.070 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:57:50.072 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/get/1(String), [1](String), 1(Integer), null, GET(String), 99(Long), {"code":20000,"data":{"deleted":0,"enable":0,"typeBlogCount":100,"typeId":1,"typeName":"Java"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:57:50.169 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 22:58:31.965 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/get/2
+2020-10-23 22:58:31.966 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : GET
+2020-10-23 22:58:31.966 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 22:58:31.967 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.getById
+2020-10-23 22:58:31.967 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[2]
+2020-10-23 22:58:32.008 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-10-23 22:58:32.008 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 2(Integer)
+2020-10-23 22:58:32.046 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-23 22:58:32.047 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 82
+2020-10-23 22:58:32.047 INFO  [http-nio-8080-exec-4]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":2,"typeName":"c语言"},"msg":"操作成功！"}
+2020-10-23 22:58:32.090 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 22:58:32.093 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/get/2(String), [2](String), 1(Integer), null, GET(String), 82(Long), {"code":20000,"data":{"deleted":0,"enable":1,"typeBlogCount":0,"typeId":2,"typeName":"c语言"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 22:58:32.179 DEBUG [http-nio-8080-exec-4]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 23:03:10.865 INFO  [main]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 7516 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
+2020-10-23 23:03:10.870 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-10-23 23:03:10.870 INFO  [main]com.tqk.blog.BlogApplication.logStartupProfileInfo:655 -The following profiles are active: dev
+2020-10-23 23:03:12.169 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.316 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'shiroConfig' of type [com.tqk.blog.config.ShiroConfig$$EnhancerBySpringCGLIB$$141442b4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.376 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'mybatis-tk.mybatis.mapper.autoconfigure.MybatisProperties' of type [tk.mybatis.mapper.autoconfigure.MybatisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.392 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration' of type [tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration$$EnhancerBySpringCGLIB$$5d11c5e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.400 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure$$EnhancerBySpringCGLIB$$c0cd13bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.406 INFO  [main]c.a.d.s.boot.autoconfigure.DruidDataSourceAutoConfigure.dataSource:56 -Init DruidDataSource
+2020-10-23 23:03:12.478 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.499 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidFilterConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:12.532 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'statFilter' of type [com.alibaba.druid.filter.stat.StatFilter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.156 INFO  [main]com.alibaba.druid.pool.DruidDataSource.init:930 -{dataSource-1} inited
+2020-10-23 23:03:15.157 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'dataSource' of type [com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceWrapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.227 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' of type [org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.530 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.539 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.621 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [tk.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.631 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'blAdminMapper' of type [com.sun.proxy.$Proxy86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.685 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminServiceImpl' of type [com.tqk.blog.service.impl.AdminServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:15.687 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'adminRealm' of type [com.tqk.blog.realm.AdminRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:16.186 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:16.211 INFO  [main]o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization:330 -Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 23:03:16.260 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 23:03:16.480 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 23:03:16.586 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:92 -Tomcat initialized with port(s): 8080 (http)
+2020-10-23 23:03:16.601 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2020-10-23 23:03:16.601 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-23 23:03:16.602 INFO  [main]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2020-10-23 23:03:16.602 INFO  [main]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-10-23 23:03:16.727 INFO  [main]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2020-10-23 23:03:16.727 INFO  [main]org.springframework.web.context.ContextLoader.prepareWebApplicationContext:284 -Root WebApplicationContext: initialization completed in 5783 ms
+2020-10-23 23:03:17.715 INFO  [main]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:171 -Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-23 23:03:18.220 INFO  [main]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2020-10-23 23:03:18.246 INFO  [main]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:204 -Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-23 23:03:18.249 INFO  [main]com.tqk.blog.BlogApplication.logStarted:61 -Started BlogApplication in 8.05 seconds (JVM running for 8.55)
+2020-10-23 23:03:43.527 INFO  [http-nio-8080-exec-1]o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 -Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-23 23:03:43.528 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:525 -Initializing Servlet 'dispatcherServlet'
+2020-10-23 23:03:43.562 INFO  [http-nio-8080-exec-1]org.springframework.web.servlet.DispatcherServlet.initServletBean:547 -Completed initialization in 34 ms
+2020-10-23 23:03:51.283 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /BlAdmin/login
+2020-10-23 23:03:51.285 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : POST
+2020-10-23 23:03:51.286 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 23:03:51.288 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.AdminController.login
+2020-10-23 23:03:51.288 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[com.tqk.blog.pojo.BlAdmin@658041]
+2020-10-23 23:03:51.373 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==>  Preparing: select name, header, signature, username, password from bl_admin where username = ? 
+2020-10-23 23:03:51.414 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -==> Parameters: admin(String)
+2020-10-23 23:03:51.496 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlAdminMapper.getByUsername.debug:159 -<==      Total: 1
+2020-10-23 23:03:51.507 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 224
+2020-10-23 23:03:51.598 INFO  [http-nio-8080-exec-3]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"data":{"token":"8DAF4E0F0823C668C21BE1C0ABE3D9C9"},"msg":"操作成功！"}
+2020-10-23 23:03:51.638 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 23:03:51.641 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /BlAdmin/login(String), [com.tqk.blog.pojo.BlAdmin@658041](String), 1(Integer), null, POST(String), 224(Long), {"code":20000,"data":{"token":"8DAF4E0F0823C668C21BE1C0ABE3D9C9"},"msg":"操作成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 23:03:51.728 DEBUG [http-nio-8080-exec-3]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 23:04:07.395 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/enable/1
+2020-10-23 23:04:07.396 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : PUT
+2020-10-23 23:04:07.396 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 23:04:07.397 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.enable
+2020-10-23 23:04:07.397 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[1]
+2020-10-23 23:04:07.448 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-10-23 23:04:07.449 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 1(Integer)
+2020-10-23 23:04:07.488 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-23 23:04:07.532 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==>  Preparing: UPDATE bl_type SET type_name = ?,type_blog_count = ?,enable = ?,deleted = ? WHERE type_id = ? 
+2020-10-23 23:04:07.534 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==> Parameters: Java(String), 100(Integer), 1(Integer), 0(Integer), 1(Integer)
+2020-10-23 23:04:07.618 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -<==    Updates: 1
+2020-10-23 23:04:07.620 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 225
+2020-10-23 23:04:07.621 INFO  [http-nio-8080-exec-5]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"已启用"}
+2020-10-23 23:04:07.662 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 23:04:07.665 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/enable/1(String), [1](String), 1(Integer), null, PUT(String), 225(Long), {"code":20000,"msg":"已启用"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 23:04:07.749 DEBUG [http-nio-8080-exec-5]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 23:05:39.346 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/disable/3
+2020-10-23 23:05:39.347 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : PUT
+2020-10-23 23:05:39.347 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 23:05:39.348 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.disable
+2020-10-23 23:05:39.348 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[3]
+2020-10-23 23:05:39.389 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==>  Preparing: SELECT type_id,type_name,type_blog_count,enable,deleted FROM bl_type WHERE type_id = ? 
+2020-10-23 23:05:39.391 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -==> Parameters: 3(Integer)
+2020-10-23 23:05:39.428 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.selectByPrimaryKey.debug:159 -<==      Total: 1
+2020-10-23 23:05:39.468 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==>  Preparing: UPDATE bl_type SET type_name = ?,type_blog_count = ?,enable = ?,deleted = ? WHERE type_id = ? 
+2020-10-23 23:05:39.469 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -==> Parameters: Python(String), 0(Integer), 0(Integer), 0(Integer), 3(Integer)
+2020-10-23 23:05:39.561 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlTypeMapper.updateByPrimaryKey.debug:159 -<==    Updates: 1
+2020-10-23 23:05:39.562 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 216
+2020-10-23 23:05:39.563 INFO  [http-nio-8080-exec-8]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"已弃用"}
+2020-10-23 23:05:39.601 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 23:05:39.602 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/disable/3(String), [3](String), 1(Integer), null, PUT(String), 216(Long), {"code":20000,"msg":"已弃用"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 23:05:39.694 DEBUG [http-nio-8080-exec-8]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
+2020-10-23 23:06:38.989 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:115 -请求地址 : /type/delete/4
+2020-10-23 23:06:38.990 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:116 -请求方式 : DELETE
+2020-10-23 23:06:38.991 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:119 -IP : 0:0:0:0:0:0:0:1
+2020-10-23 23:06:38.992 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:121 -方法 : com.tqk.blog.controller.TypeController.delete
+2020-10-23 23:06:38.993 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.printRequestLog:123 -请求参数：[4]
+2020-10-23 23:06:39.042 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.deleteByPrimaryKey.debug:159 -==>  Preparing: DELETE FROM bl_type WHERE type_id = ? 
+2020-10-23 23:06:39.043 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.deleteByPrimaryKey.debug:159 -==> Parameters: 4(Integer)
+2020-10-23 23:06:39.128 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlTypeMapper.deleteByPrimaryKey.debug:159 -<==    Updates: 1
+2020-10-23 23:06:39.130 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAround:67 -耗时 : 141
+2020-10-23 23:06:39.131 INFO  [http-nio-8080-exec-9]com.tqk.blog.aspect.RequestAspect.doAfterReturning:81 -返回值：{"code":20000,"msg":"删除成功！"}
+2020-10-23 23:06:39.171 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
+2020-10-23 23:06:39.173 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /type/delete/4(String), [4](String), 1(Integer), null, DELETE(String), 141(Long), {"code":20000,"msg":"删除成功！"}(String), 0:0:0:0:0:0:0:1(String)
+2020-10-23 23:06:39.256 DEBUG [http-nio-8080-exec-9]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

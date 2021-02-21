@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.tqk.blog.mapper.BlCommentMapper" >
+  <resultMap id="BaseResultMap" type="com.tqk.blog.pojo.BlComment" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="comment_id" property="commentId" jdbcType="VARCHAR" />
+    <result column="comment_user" property="commentUser" jdbcType="INTEGER" />
+    <result column="comment_blog" property="commentBlog" jdbcType="VARCHAR" />
+    <result column="comment_good" property="commentGood" jdbcType="INTEGER" />
+    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
+    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <result column="comment_content" property="commentContent" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>
