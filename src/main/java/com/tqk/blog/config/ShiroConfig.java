@@ -49,7 +49,9 @@ public class ShiroConfig {
         filterMap.put("/upload/**", "anon");
         filterMap.put("/*/getByPage", "anon");
         filterMap.put("/*/get/**", "anon");
+        filterMap.put("/*/read/**", "anon");
         filterMap.put("/type/all", "anon");
+        filterMap.put("/type/*", "anon");
         filterMap.put("/**", "authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);

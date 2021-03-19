@@ -128,12 +128,15 @@ public class BlogController {
      */
     @RequestMapping(value = "/getByPage", method = RequestMethod.POST)
     public Result<Page<BlogVo>> getByPage(@RequestBody Page<BlogVo> page) {
+        System.out.println(page.toString());
         String sortColumn = page.getSortColumn();
         if (StringUtils.isNotBlank(sortColumn)) {
             // 排序列不为空
             String[] sortColumns = {"blog_goods", "blog_read", "blog_collection",
                     "type_name", "blog_comment", "created_time", "update_time"};
+            //字符串转化为list
             List<String> sortList = Arrays.asList(sortColumns);
+            //判断排序参数是否合法
             if (!sortList.contains(sortColumn.toLowerCase())) {
                 return new Result<>(ResultEnum.PARAMS_ERROR.getCode(), "排序参数不合法！");
             }

@@ -66,7 +66,7 @@ public class LogController {
      * @param ids
      * @return
      */
-    @RequestMapping(value = "/deleteByIds", method = RequestMethod.GET)
+    @RequestMapping(value = "/deleteByIds", method = RequestMethod.PUT)
     public Result<Object> deleteByIds(@RequestBody List<Integer> ids) {
         logService.deleteByIds(ids);
         return new Result<>("删除成功！");

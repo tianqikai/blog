@@ -22,6 +22,7 @@ class BlogApplicationTests {
 		base64="data:image/jpeg;base64,"+base64;
 		MultipartFile multipartFile= BASE64DecodedMultipartFile.base64ToMultipart(base64);
 		System.out.println(multipartFile);
+		System.out.println("multipartFile:");
 		uploadService.uploadImage(multipartFile);
 	}
 

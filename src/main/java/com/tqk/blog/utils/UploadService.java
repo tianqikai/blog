@@ -6,15 +6,11 @@ import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.tqk.blog.config.UploadConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
@@ -26,8 +22,6 @@ import java.io.IOException;
 @EnableConfigurationProperties(UploadConfig.class)
 @Slf4j
 public class UploadService {
-    private Log log = LogFactory.getLog(UploadService.class);
-
     @Autowired
     private FastFileStorageClient storageClient;
 
@@ -56,15 +50,15 @@ public class UploadService {
             throw new RuntimeException("文件类型不支持");
         }
         // 2、校验文件内容
-        try {
-            BufferedImage image = ImageIO.read(file.getInputStream());
-            if (image == null || image.getWidth() == 0 || image.getHeight() == 0) {
-                throw new RuntimeException("上传文件有问题");
-            }
-        } catch (IOException e) {
-            log.error("校验文件内容失败....{}", e);
-            throw new RuntimeException("校验文件内容失败"+e.getMessage());
-        }
+//        try {
+//            BufferedImage image = ImageIO.read(file.getInputStream());
+//            if (image == null || image.getWidth() == 0 || image.getHeight() == 0) {
+//                throw new RuntimeException("上传文件有问题");
+//            }
+//        } catch (IOException e) {
+//            log.error("校验文件内容失败....{}", e);
+//            throw new RuntimeException("校验文件内容失败"+e.getMessage());
+//        }
         try {
             // 3、上传到FastDFS
             // 3.1、获取扩展名

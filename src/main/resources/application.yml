@@ -3,6 +3,10 @@ server:
 mybatis:
   mapper-locations: classpath:mapper/*Mapper.xml
   type-aliases-package: com.tqk
+#  type-aliases-package:
+  # 打印出sql语句
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 spring:
   profiles:
     active: dev

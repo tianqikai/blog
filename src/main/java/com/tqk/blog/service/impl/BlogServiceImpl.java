@@ -112,6 +112,8 @@ public class BlogServiceImpl implements BlogService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public Page<BlogVo> getByPage(Page<BlogVo> page) {
+        System.out.println("page:");
+        System.out.println(page.toString());
         // 查询数据
         List<BlogVo> blogVoList = blogMapper.getByPage(page);
         page.setList(blogVoList);

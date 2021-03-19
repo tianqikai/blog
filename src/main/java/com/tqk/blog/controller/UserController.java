@@ -9,6 +9,7 @@ import com.tqk.blog.token.UsernamePasswordToken;
 import com.tqk.blog.utils.Page;
 import com.tqk.blog.utils.Result;
 import com.tqk.blog.utils.StringUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.subject.Subject;
@@ -28,6 +29,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class UserController {
 
     @Autowired
@@ -77,6 +79,7 @@ public class UserController {
      */
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
     public Result<BlUser> get(@PathVariable Integer id) {
+        log.info("查询编号："+id);
         BlUser user = userService.getById(id);
         return new Result<>(user);
     }
