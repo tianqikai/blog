@@ -23,4 +23,9 @@ public interface BlMusicMapper extends MyMapper<BlMusic> {
      * @return
      */
     int getCountByPage(Page<BlMusic> page);
+    /**
+     * 查询最大的编号
+     * @return
+     */
+    int selectMaxid();
 }

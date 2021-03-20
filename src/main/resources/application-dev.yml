@@ -26,6 +26,7 @@ spring:
       - image/gif
       - audio/mpeg
       - audio/mp3
+      - video/mp4
 fdfs:
   so-timeout: 2500    # 读取时间
   connect-timeout: 600   # 连接超时时间

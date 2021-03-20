@@ -1,7 +1,9 @@
 package com.tqk.blog.service.impl;
 
 
+import com.tqk.blog.enums.ResultEnum;
 import com.tqk.blog.enums.StateEnums;
+import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.mapper.BlMusicMapper;
 import com.tqk.blog.pojo.BlMusic;
 import com.tqk.blog.service.MusicService;
@@ -30,6 +32,12 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public void save(BlMusic music) {
+        Integer maxId= musicMapper.selectMaxid();
+        if(music.getId()==null){
+           music.setId(maxId+1);
+        }else if(maxId>=music.getId()){
+            throw new BlogException(ResultEnum.ERROR, "音乐编号错误！");
+        }
         musicMapper.insert(music);
     }
 

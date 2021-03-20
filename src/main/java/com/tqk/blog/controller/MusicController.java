@@ -2,6 +2,7 @@ package com.tqk.blog.controller;
 
 
 import com.tqk.blog.enums.ResultEnum;
+import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.pojo.BlMusic;
 import com.tqk.blog.service.MusicService;
 import com.tqk.blog.utils.Page;
@@ -33,8 +34,18 @@ public class MusicController {
      */
     @RequestMapping(value = "/save", method = RequestMethod.POST)
     public Result<Object> save(@RequestBody BlMusic music) {
-        musicService.save(music);
-        return new Result<>("添加成功！");
+        String msg="添加成功！";
+        Result<Object> result =new Result(msg);
+        try{
+            musicService.save(music);
+        }catch(Exception e){
+            if(e instanceof BlogException){
+                result.setMsg(e.getMessage());
+            }else{
+                result.setMsg("音乐添加失败！");
+            }
+        }
+        return result;
     }
 
     /**

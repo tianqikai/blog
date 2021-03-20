@@ -32,10 +32,6 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private BlUserMapper userMapper;
-//    @Autowired
-//    private CommentDao commentDao;
-//    @Autowired
-//    private CollectionDao collectionDao;
 
 
     @Override

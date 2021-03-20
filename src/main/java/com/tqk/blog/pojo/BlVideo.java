@@ -7,9 +7,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Table(name = "bl_vedio")
+@Table(name = "bl_video")
 @ToString
-public class BlVedio {
+public class BlVideo {
     /**
      * 视频id
      */

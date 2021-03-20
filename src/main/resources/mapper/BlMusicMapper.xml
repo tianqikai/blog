@@ -57,4 +57,7 @@
       and enable = #{params.enabled}
     </if>
   </select>
+  <select id="selectMaxid" resultType="integer">
+    select max(id) from bl_music
+  </select>
 </mapper>
