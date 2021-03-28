@@ -1,6 +1,5 @@
 package com.tqk.blog.mapper;
 
-import com.tqk.blog.pojo.BlAbout;
 import com.tqk.blog.pojo.BlAdmin;
 import com.tqk.blog.utils.MyMapper;
 
@@ -10,7 +9,7 @@ import com.tqk.blog.utils.MyMapper;
  * @author: tianqikai
  * @create: 2020-10-12 23:59
  **/
-public interface BlAdminMapper extends MyMapper<BlAbout> {
+public interface BlAdminMapper extends MyMapper<BlAdmin> {
     /**
      * 根据用户名查询
      * @param username

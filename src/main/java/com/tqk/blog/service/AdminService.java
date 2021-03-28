@@ -37,4 +37,12 @@ public interface AdminService {
      * @param admin
      */
     void updatePassword(BlAdmin admin);
+
+    /**
+     * @Method：校验密码
+     * @Date： 2021/3/28 20:13
+     * @Author： Administrator
+     * @Version  1.0
+     */
+    boolean checkPassword(BlAdmin admin);
 }

@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -38,6 +39,9 @@ public class MusicServiceImpl implements MusicService {
         }else if(maxId>=music.getId()){
             throw new BlogException(ResultEnum.ERROR, "音乐编号错误！");
         }
+        music.setDeleted(StateEnums.NOT_DELETED.getCode());
+        music.setEnable(StateEnums.ENABLED.getCode());
+        music.setCreatedTime(new Date());
         musicMapper.insert(music);
     }
 

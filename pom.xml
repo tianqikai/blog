@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<!--		跳过测试类-->
 		<skipTests>true</skipTests>
 	</properties>
 

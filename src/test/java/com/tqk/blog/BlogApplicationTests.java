@@ -23,7 +23,8 @@ class BlogApplicationTests {
 		MultipartFile multipartFile= BASE64DecodedMultipartFile.base64ToMultipart(base64);
 		System.out.println(multipartFile);
 		System.out.println("multipartFile:");
-		uploadService.uploadImage(multipartFile);
+		String url= uploadService.uploadImage(multipartFile);
+		System.out.println(url);
 	}
 
 }

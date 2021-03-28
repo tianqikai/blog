@@ -1,7 +1,7 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://49.232.21.151:3306/blog?useSSL=false&serverTimezone=CTT&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
+      url: jdbc:mysql://172.21.0.16:3306/blog?useSSL=false&serverTimezone=CTT&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
       username: root
       password: 12345@tqk
       driver-class-name: com.mysql.cj.jdbc.Driver
@@ -13,23 +13,26 @@ spring:
       testOnReturn: false
       timeBetweenEvictionRunsMillis: 60000
       minEvictableIdleTimeMillis: 300000
-servlet:
-  multipart:
-    max-file-size: 50MB
-    max-request-size: 100MB
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+  upload:
+    base-url: http://49.232.21.151/
+    allow-types:
+      - image/jpeg
+      - image/png
+      - image/bmp
+      - image/gif
+      - audio/mpeg
+      - audio/mp3
+      - video/mp4
 fdfs:
   so-timeout: 2500    # 读取时间
   connect-timeout: 600   # 连接超时时间
   thumb-image:     # 缩略图
     width: 100
     height: 100
+    # tracker服务配置地址列表
   tracker-list:
-    - 49.232.21.151:22122   # tracker服务配置地址列表
-upload:
-  base-url: http://49.232.21.151/
-  allow-types:
-    - image/jpeg
-    - image/png
-    - image/bmp
-    - image/gif
-    - audio/mpeg
+    - 49.232.21.151:22122

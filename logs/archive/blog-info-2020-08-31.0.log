@@ -1,8 +1,0 @@
-2020-08-31 20:54:05.005 INFO  [restartedMain]com.tqk.blog.BlogApplication.logStarting:55 -Starting BlogApplication on WIN-LFFH2UEU8RH with PID 6708 (D:\javaweb\blog\target\classes started by Administrator in D:\javaweb\blog)
-2020-08-31 20:54:05.012 INFO  [restartedMain]com.tqk.blog.BlogApplication.logStartupProfileInfo:651 -No active profile set, falling back to default profiles: default
-2020-08-31 20:54:05.173 INFO  [restartedMain]o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:225 -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-08-31 20:54:05.746 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:127 -Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2020-08-31 20:54:05.783 INFO  [restartedMain]o.s.d.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn:187 -Finished Spring Data repository scanning in 29ms. Found 0 JDBC repository interfaces.
-2020-08-31 20:54:06.134 INFO  [restartedMain]o.s.b.a.logging.ConditionEvaluationReportLoggingListener.logMessage:136 -
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.

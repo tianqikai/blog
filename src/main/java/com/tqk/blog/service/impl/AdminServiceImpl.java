@@ -44,6 +44,16 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
+    public boolean checkPassword(BlAdmin admin) {
+        BlAdmin oldAdmin=adminMapper.selectByPrimaryKey(admin.getId());
+        if(oldAdmin.getPassword().equalsIgnoreCase(admin.getPassword())){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    @Override
     public void updatePassword(BlAdmin admin) {
         BlAdmin oldAdmin = adminMapper.getAdmin();
         oldAdmin.setPassword(admin.getPassword());

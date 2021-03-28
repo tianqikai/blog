@@ -58,6 +58,6 @@
     </if>
   </select>
   <select id="selectMaxid" resultType="integer">
-    select max(id) from bl_music
+    select case when max(id) is null then 0 else max(id) end from bl_music
   </select>
 </mapper>

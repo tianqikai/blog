@@ -12,6 +12,7 @@
     <result column="comment" property="comment" jdbcType="VARCHAR" />
     <result column="username" property="username" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
+    <result column="oldpassword" property="oldpassword" jdbcType="VARCHAR" />
   </resultMap>
   <!-- 通用查询结果列 -->
   <sql id="Base_Column_List">

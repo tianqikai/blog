@@ -87,7 +87,21 @@ public class AdminController {
         adminService.updateInfo(blAdmin);
         return new Result<>("更新成功！");
     }
+    /**
+     * 校验密码
+     * @param blAdmin
+     * @return
+     */
+    @RequestMapping(value = "/checkPassword", method = RequestMethod.POST)
+    public Result<Object> checkPassword(@RequestBody BlAdmin blAdmin) {
 
+        boolean bool=adminService.checkPassword(blAdmin);
+        if(bool){
+            return new Result<>("校验密码成功！");
+        }else{
+            return new Result<>(ResultEnum.ERROR.getCode(),"原校验密码失败！");
+        }
+    }
     /**
      * 更新密码
      * @param blAdmin

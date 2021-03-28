@@ -1,3 +1,0 @@
-2020-12-05 11:28:12.211 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-12-05 11:28:12.425 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
-2020-12-05 11:28:12.648 ERROR [main]org.apache.catalina.core.AprLifecycleListener.log:173 -An incompatible version [1.1.30] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]

@@ -1,8 +1,0 @@
-2020-10-11 22:42:06.075 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2020-10-11 22:42:37.164 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2020-10-11 22:42:37.206 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /hotel/welcome(String), [](String), 1(Integer), null, GET(String), 12(Long), "欢迎登陆莫兰迪酒店！"(String), 0:0:0:0:0:0:0:1(String)
-2020-10-11 22:42:37.295 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
-2020-10-11 23:01:33.968 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2020-10-11 23:01:56.528 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2020-10-11 23:01:56.579 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /hotel/welcome(String), [](String), 1(Integer), null, GET(String), 17(Long), "欢迎登陆莫兰迪酒店！"(String), 0:0:0:0:0:0:0:1(String)
-2020-10-11 23:01:56.708 DEBUG [http-nio-8888-exec-1]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1

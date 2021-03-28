@@ -1,4 +1,0 @@
-2020-11-21 23:09:31.880 WARN  [http-nio-8899-exec-2]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-11-21 23:10:54.644 WARN  [http-nio-8899-exec-2]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-11-21 23:12:20.812 WARN  [http-nio-8899-exec-1]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
-2020-11-21 23:12:32.912 WARN  [http-nio-8899-exec-4]o.s.w.s.mvc.support.DefaultHandlerExceptionResolver.logException:199 -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]

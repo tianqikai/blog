@@ -1,4 +1,0 @@
-2021-01-05 00:12:24.392 DEBUG [main]com.tqk.blog.BlogApplication.logStarting:56 -Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
-2021-01-05 00:15:24.809 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==>  Preparing: insert into bl_log( log_url, log_params, log_status, log_message, log_method, log_time, log_result, log_ip ) values ( ?, ?, ?, ?, ?, ?, ?, ? ) 
-2021-01-05 00:15:24.849 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -==> Parameters: /upload/uploadImage(String), [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@68fc555](String), 1(Integer), null, POST(String), 20(Long), {"code":20000,"data":""}(String), 192.168.101.29(String)
-2021-01-05 00:15:24.951 DEBUG [http-nio-8899-exec-2]com.tqk.blog.mapper.BlLogMapper.save.debug:159 -<==    Updates: 1
