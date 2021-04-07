@@ -17,7 +17,15 @@ import java.util.Map;
  * @Version 1.0
  */
 public interface UserService {
+    /**
+     * @description: 登录
+     */
+    Map<String,Object> login(BlUser user);
 
+    /**
+     * @description: 注销登录
+     */
+    void logOut();
     /**
      * 保存
      *
@@ -38,14 +46,14 @@ public interface UserService {
      * @param id
      * @return
      */
-    BlUser getById(Integer id);
+    BlUser getById(String id);
 
     /**
      * 根据id删除
      *
      * @param id
      */
-    void deleteById(Integer id);
+    void deleteById(String id);
 
     /**
      * 分页查询
@@ -59,13 +67,13 @@ public interface UserService {
      * 重置密码为123456
      * @param userIds
      */
-    void resetPwd(List<Integer> userIds);
+    void resetPwd(List<String> userIds);
 
     /**
      * 注册
      * @param user
      */
-    void register(BlUser user);
+    BlUser register(BlUser user);
 
     /**
      * 根据用户名查询

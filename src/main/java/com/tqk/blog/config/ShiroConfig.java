@@ -42,16 +42,15 @@ public class ShiroConfig {
          */
         Map<String, String> filterMap = Maps.newHashMap();
         filterMap.put("/BlAdmin/welcome", "anon");
-        filterMap.put("/hotel/welcome", "anon");
         filterMap.put("/BlAdmin/login", "anon");
         filterMap.put("/BlAdmin/logout", "anon");
-        filterMap.put("/BlAdmin/**", "anon");
         filterMap.put("/upload/**", "anon");
         filterMap.put("/*/getByPage", "anon");
         filterMap.put("/*/get/**", "anon");
         filterMap.put("/*/read/**", "anon");
-        filterMap.put("/type/all", "anon");
         filterMap.put("/type/*", "anon");
+        filterMap.put("/user/login", "anon");
+        filterMap.put("/music/getList", "anon");
         filterMap.put("/**", "authc");
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);

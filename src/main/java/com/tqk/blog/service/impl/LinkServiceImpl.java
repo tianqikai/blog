@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,7 +29,9 @@ public class LinkServiceImpl implements LinkService {
 
     @Override
     public void save(BlLink link) {
-        linkMapper.insert(link);
+        link.setCreatedTime(new Date());
+        link.setUpdateTime(new Date());
+        linkMapper.save(link);
     }
 
     @Override

@@ -5,27 +5,27 @@
     <!--
       WARNING - @mbg.generated
     -->
-    <id column="user_id" property="userId" jdbcType="INTEGER" />
-    <result column="username" property="username" jdbcType="VARCHAR" />
-    <result column="password" property="password" jdbcType="VARCHAR" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="sex" property="sex" jdbcType="INTEGER" />
-    <result column="header" property="header" jdbcType="VARCHAR" />
-    <result column="nickname" property="nickname" jdbcType="VARCHAR" />
-    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
-    <result column="created_time" property="createdTime" jdbcType="TIMESTAMP" />
-    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
-    <result column="version" property="version" jdbcType="INTEGER" />
-    <result column="deleted" property="deleted" jdbcType="INTEGER" />
+    <id column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="INTEGER" property="sex" />
+    <result column="header" jdbcType="VARCHAR" property="header" />
+    <result column="nickname" jdbcType="VARCHAR" property="nickname" />
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="version" jdbcType="INTEGER" property="version" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
   </resultMap>
   <!-- 通用查询结果列 -->
   <sql id="Base_Column_List">
     user_id, username, password, name, sex, header, nickname, user_email, created_time, update_time, version, deleted
   </sql>
   <insert id="save" parameterType="com.tqk.blog.pojo.BlUser">
-    insert into bl_user(
+    insert into bl_user( user_id,
     username, password, name, sex, header, nickname, user_email
-    ) values (
+    ) values (#{userId},
     #{username}, #{password}, #{name}, #{sex},
     #{header}, #{nickname}, #{userEmail}
     )
@@ -155,7 +155,14 @@
     </foreach>
     and deleted = 0
   </select>
-  <select id="getByUsername" resultMap="BaseResultMap">
+  <select id="getByUserEmail" resultMap="BaseResultMap">
+    select
+    user_id, username, password,
+    sex, header, nickname, user_email, deleted
+    from bl_user
+    where user_email = #{useremail}
+  </select>
+  <select id="getByUserName" resultMap="BaseResultMap">
     select
     user_id, username, password,
     sex, header, nickname, user_email, deleted

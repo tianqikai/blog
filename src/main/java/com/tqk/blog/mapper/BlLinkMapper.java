@@ -31,4 +31,12 @@ public interface BlLinkMapper extends MyMapper<BlLink> {
      * @param id
      */
     void deleteById(Integer id);
+
+    /**
+     * @classname : BlLinkMapper
+     * @description: 插入友情链接信息
+     * @author: tianqikai
+     * @date : 2021/4/7 21:42
+     */
+    void save(BlLink link);
 }

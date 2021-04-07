@@ -37,4 +37,11 @@
     deleted = 1
     where link_id = #{value}
   </delete>
+  <insert id="save" parameterType="com.tqk.blog.pojo.BlLink">
+    insert into bl_link(
+    link_name, link_url, created_time, update_time
+    ) values (
+    #{linkName}, #{linkUrl}, #{createdTime},  #{updateTime}
+    )
+  </insert>
 </mapper>

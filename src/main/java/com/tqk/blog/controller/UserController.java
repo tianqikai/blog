@@ -2,23 +2,20 @@ package com.tqk.blog.controller;
 
 
 import com.tqk.blog.enums.ResultEnum;
-import com.tqk.blog.enums.StateEnums;
+import com.tqk.blog.execption.BlogException;
+import com.tqk.blog.mapper.BlUserMapper;
 import com.tqk.blog.pojo.BlUser;
 import com.tqk.blog.service.UserService;
-import com.tqk.blog.token.UsernamePasswordToken;
 import com.tqk.blog.utils.Page;
 import com.tqk.blog.utils.Result;
 import com.tqk.blog.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.SecurityUtils;
-import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.Serializable;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -34,6 +31,8 @@ public class UserController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private BlUserMapper blUserMapper;
 
     /**
      * 保存
@@ -78,7 +77,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/get/{id}", method = RequestMethod.GET)
-    public Result<BlUser> get(@PathVariable Integer id) {
+    public Result<BlUser> get(@PathVariable String id) {
         log.info("查询编号："+id);
         BlUser user = userService.getById(id);
         return new Result<>(user);
@@ -91,7 +90,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
-    public Result<Object> delete(@PathVariable Integer id) {
+    public Result<Object> delete(@PathVariable String id) {
         userService.deleteById(id);
         return new Result<>("删除成功！");
     }
@@ -123,7 +122,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/resetPwd", method = RequestMethod.PUT)
-    public Result<Object> resetPwd(@RequestBody List<Integer> userIds) {
+    public Result<Object> resetPwd(@RequestBody List<String> userIds) {
         userService.resetPwd(userIds);
         return new Result<>("重置完毕！");
     }
@@ -133,10 +132,28 @@ public class UserController {
      */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public Result<Object> register(@RequestBody BlUser user) {
-        userService.register(user);
-        return new Result<>("注册成功！");
+        Result<Object> result=new Result<>();
+        try{
+            user=userService.register(user);
+            result.setCode(ResultEnum.SUCCESS.getCode());
+            result.setMsg("注册用户成功");
+        }catch (Exception e){
+            result.setCode(ResultEnum.ERROR.getCode());
+            result.setMsg("注册用户失败！");
+        }
+        return result;
     }
-
+    /**
+     * 注销当前登录用户
+     *
+     * @return
+     */
+    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    public Result<Object> logOut() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return new Result<>("用户注销成功！");
+    }
     /**
      * 登录
      *
@@ -145,25 +162,23 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result<Object> login(@RequestBody BlUser user) {
-        if (user == null || StringUtils.isBlank(user.getUsername()) || StringUtils.isBlank(user.getPassword())) {
-            return new Result<>(ResultEnum.PARAMS_NULL.getCode(), "用户名或密码错误！");
+        Result<Object> result=new Result<>();
+        Map<String, Object> returnMap=null;
+        try{
+            returnMap=userService.login(user);
+            System.out.println("user:"+returnMap.get("user").toString());
+            result.setData(returnMap);
+            result.setCode(ResultEnum.SUCCESS.getCode());
+            result.setMsg("登陆成功");
+        }catch (Exception e){
+            log.info("登陆失败："+e.getMessage());
+            String errMsg = "系统错误，登陆失败！";
+            if(e instanceof BlogException){
+                errMsg= e.getMessage();
+            }
+            result=new Result<Object>(ResultEnum.ERROR.getCode(),errMsg);
         }
-        Subject subject = SecurityUtils.getSubject();
-        AuthenticationToken authenticationToken = new UsernamePasswordToken(user.getUsername(), user.getPassword(), StateEnums.USER.getCode());
-        try {
-            subject.login(authenticationToken);
-        } catch (Exception e) {
-            return new Result<>(ResultEnum.PARAMS_NULL.getCode(), "用户名或密码错误！");
-        }
-        // 登录成功
-        Serializable sessionId = subject.getSession().getId();
-        BlUser u = (BlUser) subject.getPrincipal();
-        u.setPassword("");
-        u.setDeleted(null);
-        Map<String, Object> returnMap = new HashMap<>(2);
-        returnMap.put("token", sessionId);
-        returnMap.put("user", u);
-        return new Result<>(returnMap);
+        return result;
     }
 
     /**

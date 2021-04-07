@@ -80,7 +80,13 @@ public final class IdWorker {
         this.DATA_CENTER_ID = getDatacenterId(MAX_DATA_CENTER_ID);
         this.workerId = getMaxWorkerId(DATA_CENTER_ID, MAX_WORKER_ID);
     }
-
+    /**
+     * @Method：
+     * @Description：
+     * @param workerId 机器ID
+     * @param datacenterId 数据中心ID
+     * @Version  1.0
+     */
     public IdWorker(long workerId, long datacenterId) {
         if (workerId > MAX_WORKER_ID || workerId < 0) {
             throw new IllegalArgumentException(String.format("id不能大于最大值 %d 或者小于 0", MAX_WORKER_ID));
@@ -142,14 +148,14 @@ public final class IdWorker {
         mpid.append(dataCenterId);
         String name = ManagementFactory.getRuntimeMXBean().getName();
         if (!name.isEmpty()) {
-         /*
-          * GET jvmPid
-          */
+            /*
+             * GET jvmPid
+             */
             mpid.append(name.split("@")[0]);
         }
-      /*
-       * MAC + PID 的 hashcode 获取16个低位
-       */
+        /*
+         * MAC + PID 的 hashcode 获取16个低位
+         */
         return (mpid.toString().hashCode() & 0xffff) % (maxWorkerId + 1);
     }
 
@@ -175,6 +181,11 @@ public final class IdWorker {
             System.out.println(" getDatacenterId: " + e.getMessage());
         }
         return id;
+    }
+
+    public static void main(String[] args) {
+        IdWorker idWorker =new IdWorker();
+        System.out.println(new String(String.valueOf(idWorker.nextId())));
     }
 
 

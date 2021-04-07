@@ -1,4 +1,8 @@
 spring:
+  data:
+    mongodb:
+      host: 49.232.21.151
+      database: blog
   datasource:
     druid:
       url: jdbc:mysql://49.232.21.151:3306/blog?useSSL=false&serverTimezone=CTT&serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8
@@ -27,6 +31,7 @@ spring:
       - audio/mpeg
       - audio/mp3
       - video/mp4
+      - image/x-icon
 fdfs:
   so-timeout: 2500    # 读取时间
   connect-timeout: 600   # 连接超时时间

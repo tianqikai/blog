@@ -1,18 +1,21 @@
 package com.tqk.blog.pojo;
 
-import javax.persistence.*;
+import lombok.Data;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
-import javax.persistence.*;
 
 @Table(name = "bl_user")
+@Data
 public class BlUser {
     /**
      * 用户id
      */
     @Id
     @Column(name = "user_id")
-    private Integer userId;
+    private String userId;
 
     /**
      * 用户名
@@ -77,7 +80,7 @@ public class BlUser {
      *
      * @return user_id - 用户id
      */
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
@@ -86,7 +89,7 @@ public class BlUser {
      *
      * @param userId 用户id
      */
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 

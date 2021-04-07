@@ -44,6 +44,7 @@ public class AdminController {
         Subject subject = SecurityUtils.getSubject();
         AuthenticationToken authenticationToken = new UsernamePasswordToken(blAdmin.getUsername(), blAdmin.getPassword(), StateEnums.ADMIN.getCode());
         try {
+            //怎么实现和数据库内的用户名密码校验的？
             subject.login(authenticationToken);
         } catch (Exception e) {
             e.printStackTrace();
@@ -67,7 +68,17 @@ public class AdminController {
         loginBlAdmin.setPassword("");
         return new Result<>(loginBlAdmin);
     }
-
+    /**
+     * 注销当前登录用户
+     *
+     * @return
+     */
+    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    public Result<BlAdmin> logOut() {
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return new Result<>("用户注销成功！");
+    }
     /**
      * 查询管理员
      */
