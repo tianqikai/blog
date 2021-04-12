@@ -4,8 +4,8 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * 评论点赞
- * @Author: 杨德石
+ * 评论点赞的实体
+ * @Author: tianqikai
  * @Date: 2020/2/16 10:22
  * @Version 1.0
  */

@@ -1,16 +1,21 @@
 package com.tqk.blog.service.impl;
 
+import com.tqk.blog.dao.BlogGoodsDao;
+import com.tqk.blog.dao.CollectionDao;
 import com.tqk.blog.mapper.BlBlogMapper;
 import com.tqk.blog.mapper.BlTypeMapper;
-import com.tqk.blog.pojo.BlBlog;
-import com.tqk.blog.pojo.BlType;
+import com.tqk.blog.pojo.*;
 import com.tqk.blog.service.BlogService;
 import com.tqk.blog.utils.IdWorker;
 import com.tqk.blog.utils.Page;
+import com.tqk.blog.utils.ShiroUtils;
 import com.tqk.blog.vo.BlogVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -33,10 +38,10 @@ public class BlogServiceImpl implements BlogService {
     private BlBlogMapper blogMapper;
     @Autowired
     private BlTypeMapper typeMapper;
-//    @Autowired
-//    private BlBlogGoodsDao blogGoodsDao;
-//    @Autowired
-//    private BlCollectionDao collectionDao;
+    @Autowired
+    private BlogGoodsDao blogGoodsDao;
+    @Autowired
+    private CollectionDao collectionDao;
     @Autowired
     private IdWorker idWorker;
 
@@ -133,66 +138,66 @@ public class BlogServiceImpl implements BlogService {
         return blogMapper.getTimeLine();
     }
 
-//    @Override
-//    public void goodByBlogAndUser(BlogGoods blogGoods) {
-//        BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        blogGoods.setUserId(user.getUserId());
-//        // 取出博客id，点赞数+1
-//        String blogId = blogGoods.getBlogId();
-//        blogMapper.updateGoods(blogId);
-//        try {
-//            blogGoods.setId(idWorker.nextId() + "");
-//            blogGoodsDao.save(blogGoods);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    @Override
-//    public int getGoodsCount(String blogId) {
-//        BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        int count = blogGoodsDao.countByUserIdAndBlogId(user.getUserId(), blogId);
-//        return count;
-//    }
+    @Override
+    public void goodByBlogAndUser(BlogGoods blogGoods) {
+        BlUser user = (BlUser) ShiroUtils.getLoginUser();
+        blogGoods.setUserId(user.getUserId());
+        // 取出博客id，点赞数+1
+        String blogId = blogGoods.getBlogId();
+        blogMapper.updateGoods(blogId);
+        try {
+            blogGoods.setId(idWorker.nextId() + "");
+            blogGoodsDao.save(blogGoods);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
-//    @Override
-//    public void collectionByBlogId(BlogCollection blogCollection) {
-//        BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        blogCollection.setUserId(user.getUserId());
-//        blogCollection.setUser(user);
-//        // 查询博客
-//        BlBlog blog = blogMapper.getById(blogCollection.getBlogId());
-//        blog.setBlogContent(null);
-//        blogCollection.setBlog(blog);
-//
-//        blog.setBlogCollection(blog.getBlogCollection() + 1);
-//        blogMapper.update(blog);
-//        try {
-//            blogCollection.setCollectionId(idWorker.nextId() + "");
-//            collectionDao.save(blogCollection);
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
+    @Override
+    public int getGoodsCount(String blogId) {
+        BlUser user = (BlUser) ShiroUtils.getLoginUser();
+        int count = blogGoodsDao.countByUserIdAndBlogId(user.getUserId(), blogId);
+        return count;
+    }
 
-//    @Override
-//    public int getCollectionCount(String blogId) {
-//        BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        int count = collectionDao.countByBlogIdAndUserId(blogId, user.getUserId());
-//        return count;
-//    }
-//
-//    @Override
-//    public Page<BlogCollection> getCollectionByPage(Page<BlogCollection> page) {
-//        BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        BlogCollection blogCollection = new BlogCollection();
-//        blogCollection.setUserId(user.getUserId());
-//        Example example = Example.of(blogCollection);
-//        Pageable pageable = PageRequest.of(page.getCurrentPage() - 1, page.getPageSize());
-//        org.springframework.data.domain.Page p = collectionDao.findAll(example, pageable);
-//        page.setTotalCount((int) p.getTotalElements());
-//        page.setTotalPage(p.getTotalPages());
-//        page.setList(p.getContent());
-//        return page;
-//    }
+    @Override
+    public void collectionByBlogId(BlogCollection blogCollection) {
+        BlUser user = (BlUser) ShiroUtils.getLoginUser();
+        blogCollection.setUserId(user.getUserId());
+        blogCollection.setUser(user);
+        // 查询博客
+        BlBlog blog = blogMapper.getById(blogCollection.getBlogId());
+        blog.setBlogContent(null);
+        blogCollection.setBlog(blog);
+
+        blog.setBlogCollection(blog.getBlogCollection() + 1);
+        blogMapper.update(blog);
+        try {
+            blogCollection.setCollectionId(idWorker.nextId() + "");
+            collectionDao.save(blogCollection);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public int getCollectionCount(String blogId) {
+        BlUser user = (BlUser) ShiroUtils.getLoginUser();
+        int count = collectionDao.countByBlogIdAndUserId(blogId, user.getUserId());
+        return count;
+    }
+
+    @Override
+    public Page<BlogCollection> getCollectionByPage(Page<BlogCollection> page) {
+        BlUser user = (BlUser) ShiroUtils.getLoginUser();
+        BlogCollection blogCollection = new BlogCollection();
+        blogCollection.setUserId(user.getUserId());
+        Example example = Example.of(blogCollection);
+        Pageable pageable = PageRequest.of(page.getCurrentPage() - 1, page.getPageSize());
+        org.springframework.data.domain.Page p = collectionDao.findAll(example, pageable);
+        page.setTotalCount((int) p.getTotalElements());
+        page.setTotalPage(p.getTotalPages());
+        page.setList(p.getContent());
+        return page;
+    }
 }

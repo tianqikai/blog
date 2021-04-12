@@ -6,10 +6,10 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 收藏时间实体类
+ * 收藏博客实体类
  * </p>
  *
- * @author 稽哥
+ * @author tianqikai
  * @date 2020-02-07 14:04:12
  * @Version 1.0
  *
@@ -35,7 +35,7 @@ public class BlogCollection implements Serializable {
     /**
      * 用户id
      */
-    private Integer userId;
+    private String userId;
 
     private BlUser user;
 

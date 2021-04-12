@@ -2,6 +2,8 @@ package com.tqk.blog.service;
 
 
 import com.tqk.blog.pojo.BlBlog;
+import com.tqk.blog.pojo.BlogCollection;
+import com.tqk.blog.pojo.BlogGoods;
 import com.tqk.blog.utils.Page;
 import com.tqk.blog.vo.BlogVo;
 
@@ -69,36 +71,36 @@ public interface BlogService {
      */
     List<BlogVo> getTimeLine();
 
-//    /**
-//     * 根据博客id和用户id点赞
-//     * @param blogGoods
-//     */
-//    void goodByBlogAndUser(BlogGoods blogGoods);
-//
-//    /**
-//     * 根据博客id查询点赞数
-//     * @param blogId
-//     * @return
-//     */
-//    int getGoodsCount(String blogId);
-//
-//    /**
-//     * 收藏
-//     * @param blogCollection
-//     */
-//    void collectionByBlogId(BlogCollection blogCollection);
-//
-//    /**
-//     * 查询收藏数
-//     * @param blogId
-//     * @return
-//     */
-//    int getCollectionCount(String blogId);
-//
-//    /**
-//     * 分页查询收藏
-//     * @param page
-//     * @return
-//     */
-//    Page<BlogCollection> getCollectionByPage(Page<BlogCollection> page);
+    /**
+     * 根据博客id和用户id点赞
+     * @param blogGoods
+     */
+    void goodByBlogAndUser(BlogGoods blogGoods);
+
+    /**
+     * 根据博客id查询点赞数
+     * @param blogId
+     * @return
+     */
+    int getGoodsCount(String blogId);
+
+    /**
+     * 收藏
+     * @param blogCollection
+     */
+    void collectionByBlogId(BlogCollection blogCollection);
+
+    /**
+     * 查询收藏数
+     * @param blogId
+     * @return
+     */
+    int getCollectionCount(String blogId);
+
+    /**
+     * 分页查询收藏
+     * @param page
+     * @return
+     */
+    Page<BlogCollection> getCollectionByPage(Page<BlogCollection> page);
 }

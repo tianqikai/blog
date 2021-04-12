@@ -4,7 +4,7 @@ import lombok.Data;
 import javax.persistence.*;
 
 /**
- * 点赞实体
+ * 博客点赞实体
  * @Author: tianqikai
  * @Date: 2020/2/16 10:22
  * @Version 1.0
@@ -18,7 +18,7 @@ public class BlogGoods {
     /**
      * 用户id
      */
-    private Integer userId;
+    private String userId;
 
     /**
      * 博客id
