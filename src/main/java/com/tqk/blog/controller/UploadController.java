@@ -1,8 +1,9 @@
 package com.tqk.blog.controller;
 
 import com.tqk.blog.enums.ResultEnum;
+import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.utils.Result;
-import com.tqk.blog.utils.UploadService;
+import com.tqk.blog.utils.FastDfsUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,7 +31,7 @@ import org.springframework.web.multipart.MultipartFile;
 @Slf4j
 public class UploadController {
     @Autowired
-    private UploadService uploadService;
+    private FastDfsUtils fastDfsUtils;
 
     /**
      * 上传文件
@@ -42,13 +43,26 @@ public class UploadController {
         String url="";
         String msg="上传成功!";
         try{
-            url = uploadService.uploadImage(file);
+            url = fastDfsUtils.uploadImage(file);
         }catch (Exception e){
             log.error("上传文件失败，[{}]",e);
-            msg=e.getMessage();
-            respCode=ResultEnum.ERROR.getCode();
+            throw new BlogException(ResultEnum.ERROR.getCode(),e.getMessage());
         }
         return new Result<>(respCode,msg, url);
     }
-
+    /**
+     * 删除文件
+     * @param filePath
+     */
+    @RequestMapping(value = "/delfile", method = RequestMethod.POST)
+    public Result<String> delFile(@RequestBody String filePath){
+        String msg="删除文件成功!";
+        try{
+            fastDfsUtils.deleteFile(filePath);
+        }catch (Exception e){
+            log.error("删除文件失败，[{}]",e);
+            throw new BlogException(ResultEnum.ERROR.getCode(),e.getMessage());
+        }
+        return new Result<>(ResultEnum.SUCCESS.getCode(),msg);
+    }
 }

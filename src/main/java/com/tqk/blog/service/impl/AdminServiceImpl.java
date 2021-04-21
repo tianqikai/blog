@@ -3,6 +3,8 @@ package com.tqk.blog.service.impl;
 import com.tqk.blog.mapper.BlAdminMapper;
 import com.tqk.blog.pojo.BlAdmin;
 import com.tqk.blog.service.AdminService;
+import com.tqk.blog.utils.FastDfsUtils;
+import com.tqk.blog.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,12 +24,13 @@ public class AdminServiceImpl implements AdminService {
 
     @Autowired
     private BlAdminMapper adminMapper;
-
+    @Autowired
+    FastDfsUtils fastDfsUtils;
     /**
      * 根据用户名查询
-     *
      * @param username
-     * @return    */
+     * @return
+     **/
     @Override
     public BlAdmin getByUsername(String username) {
         return adminMapper.getByUsername(username);
@@ -40,7 +43,11 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public void updateInfo(BlAdmin admin) {
+        BlAdmin oldAdmin=adminMapper.selectByPrimaryKey(admin.getId());
         adminMapper.update(admin);
+        if(StringUtils.isNoneBlank(oldAdmin.getHeader())&&!admin.getHeader().equals(oldAdmin.getHeader())){
+            fastDfsUtils.deleteFile(oldAdmin.getHeader());
+        }
     }
 
     @Override

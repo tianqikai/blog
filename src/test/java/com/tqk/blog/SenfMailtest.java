@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
- * @program: blog
- * @description:
+ * @program: SenfMailtest
+ * @description: 发送邮件
  * @author: tianqikai
  * @create: 2021-04-02 20:21
  **/

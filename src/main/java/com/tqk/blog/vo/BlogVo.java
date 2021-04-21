@@ -3,6 +3,7 @@ package com.tqk.blog.vo;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * @Author: tqk
@@ -75,11 +76,11 @@ public class BlogVo implements Serializable {
     /**
      * 创建时间
      */
-    private String createdTime;
+    private Date createdTime;
 
     /**
      * 更新时间
      */
-    private String updateTime;
+    private Date updateTime;
 
 }

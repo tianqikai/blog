@@ -6,7 +6,9 @@ import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.mapper.BlVideoMapper;
 import com.tqk.blog.pojo.BlVideo;
 import com.tqk.blog.service.VideoService;
+import com.tqk.blog.utils.FastDfsUtils;
 import com.tqk.blog.utils.Page;
+import com.tqk.blog.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +28,8 @@ import java.util.List;
 public class VideoServiceImpl implements VideoService {
     @Autowired
     BlVideoMapper  blVideoMapper;
+    @Autowired
+    FastDfsUtils   fastDfsUtils;
 
     @Override
     public void save(BlVideo video) {
@@ -43,7 +47,16 @@ public class VideoServiceImpl implements VideoService {
 
     @Override
     public void update(BlVideo video) {
+        BlVideo oldVideo=blVideoMapper.selectByPrimaryKey(video.getId());
         blVideoMapper.updateByPrimaryKey(video);
+        if(StringUtils.isNoneBlank(oldVideo.getCover())&&!oldVideo.getUrl().equals(video.getUrl())){
+            //先删除原来的文件
+            fastDfsUtils.deleteFile(oldVideo.getUrl());
+        }
+        if(StringUtils.isNoneBlank(oldVideo.getCover())&&!oldVideo.getCover().equals(video.getCover())){
+            //先删除原来的封面图片
+            fastDfsUtils.deleteFile(oldVideo.getCover());
+        }
     }
 
     @Override

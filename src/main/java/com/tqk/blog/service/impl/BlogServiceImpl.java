@@ -6,9 +6,7 @@ import com.tqk.blog.mapper.BlBlogMapper;
 import com.tqk.blog.mapper.BlTypeMapper;
 import com.tqk.blog.pojo.*;
 import com.tqk.blog.service.BlogService;
-import com.tqk.blog.utils.IdWorker;
-import com.tqk.blog.utils.Page;
-import com.tqk.blog.utils.ShiroUtils;
+import com.tqk.blog.utils.*;
 import com.tqk.blog.vo.BlogVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -19,6 +17,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,6 +44,8 @@ public class BlogServiceImpl implements BlogService {
     private CollectionDao collectionDao;
     @Autowired
     private IdWorker idWorker;
+    @Autowired
+    FastDfsUtils fastDfsUtils;
 
     /**
      * 在项目中，@Transactional(rollbackFor=Exception.class)，如果类加了这个注解，那么这个类里面的方法抛出异常，就会回滚，数据库里面的数据也会回滚。
@@ -84,6 +86,9 @@ public class BlogServiceImpl implements BlogService {
             BlType nowType = typeMapper.selectByPrimaryKey(nowTypeId);
             nowType.setTypeBlogCount(nowType.getTypeBlogCount() + 1);
             typeMapper.updateByPrimaryKey(nowType);
+        }
+        if(StringUtils.isNoneBlank(oldBlog.getBlogImage())&&!oldBlog.getBlogImage().equals(blog.getBlogImage())){
+            fastDfsUtils.deleteFile(oldBlog.getBlogImage());
         }
     }
 
@@ -174,6 +179,7 @@ public class BlogServiceImpl implements BlogService {
         blogMapper.update(blog);
         try {
             blogCollection.setCollectionId(idWorker.nextId() + "");
+            blogCollection.setCollectionTime(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
             collectionDao.save(blogCollection);
         } catch (Exception e) {
             e.printStackTrace();

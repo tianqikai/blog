@@ -2,6 +2,7 @@ package com.tqk.blog.utils;
 
 
 import com.github.tobato.fastdfs.domain.fdfs.StorePath;
+import com.github.tobato.fastdfs.domain.proto.storage.DownloadByteArray;
 import com.github.tobato.fastdfs.service.FastFileStorageClient;
 import com.tqk.blog.config.UploadConfig;
 import lombok.extern.slf4j.Slf4j;
@@ -11,17 +12,20 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @program: fastdfs-demo
- * @author: 雷哥
+ * @program: fastdfs-tool
+ * @author: tianqikai
  * @create: 2020-01-03 10:48
  **/
 @Component
 @EnableConfigurationProperties(UploadConfig.class)
 @Slf4j
-public class UploadService {
+public class FastDfsUtils {
     @Autowired
     private FastFileStorageClient storageClient;
 
@@ -29,9 +33,11 @@ public class UploadService {
     private UploadConfig uploadConfig;
 
     /**
-     *
-     * @param file
-     * @return
+     * @Method： uploadImage
+     * @Description： 上传文件
+     * @Date： 2021/4/16 22:56
+     * @Author： tianqikai
+     * @Version 1.0
      */
     public String uploadImage(MultipartFile file) {
         /**
@@ -44,8 +50,8 @@ public class UploadService {
          */
         // 1、校验文件类型
         String contentType = file.getContentType();
-        log.info("contentType:"+contentType);
-        log.info("uploadConfig.getAllowTypes():"+uploadConfig.getAllowTypes());
+        log.info("contentType:" + contentType);
+        log.info("uploadConfig.getAllowTypes():" + uploadConfig.getAllowTypes());
         if (!uploadConfig.getAllowTypes().contains(contentType)) {
             throw new RuntimeException("文件类型不支持");
         }
@@ -72,4 +78,52 @@ public class UploadService {
             throw new RuntimeException("【文件上传】上传文件失败！" + e.getMessage());
         }
     }
+
+    /**
+     * @param fileUrl
+     * @Method： deleteFile
+     * @Description： 根据fileUrl删除fastdfs中的文件
+     * @Date： 2021/4/16 23:09
+     * @Author： tianqikai
+     * @Version 1.0
+     */
+    public  synchronized void deleteFile(String fileUrl) {
+        if (StringUtils.isEmpty(fileUrl)) {
+            return;
+        }
+        StorePath storePath = StorePath.parseFromUrl(fileUrl);
+        System.out.println(storePath.getGroup());
+        System.out.println(storePath.getPath());
+        storageClient.deleteFile(storePath.getGroup(), storePath.getPath());
+    }
+
+
+    /**
+     * @param fileUrl  fasturl文件url
+     * @param fileName 下载的文件命名名字
+     * @Method： downLoadFile
+     * @Description：下载文件
+     * @Date： 2021/4/16 23:08
+     * @Author： tianqikai
+     * @Version 1.0
+     */
+    public void downLoadFile(HttpServletResponse response, String fileUrl, String fileName) {
+        ReentrantLock lock = new ReentrantLock();
+        byte[] bs = null;
+        lock.lock();
+        try {
+            FileOutputStream fileOutputStream=new FileOutputStream(fileName);
+//            response.setHeader("Content-Disposition", "attachment;filename=" + fileName);
+            StorePath storePath = StorePath.parseFromUrl(fileUrl);
+            bs = storageClient.downloadFile(storePath.getGroup(), storePath.getPath(), new DownloadByteArray());
+//            response.getOutputStream().write(bs);
+            fileOutputStream.write(bs);
+        } catch (Exception e) {
+            log.error("【文件下载】下载文件失败！....{}", e);
+            throw new RuntimeException("【文件下载】下载文件失败！" + e.getMessage());
+        } finally {
+            lock.unlock();
+        }
+    }
 }
+

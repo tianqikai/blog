@@ -2,6 +2,7 @@ package com.tqk.blog.controller;
 
 import com.tqk.blog.enums.ResultEnum;
 import com.tqk.blog.enums.StateEnums;
+import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.pojo.BlAdmin;
 import com.tqk.blog.service.AdminService;
 import com.tqk.blog.token.UsernamePasswordToken;
@@ -42,12 +43,13 @@ public class AdminController {
             return new Result<>(ResultEnum.PARAMS_NULL.getCode(), "用户名或密码错误！");
         }
         Subject subject = SecurityUtils.getSubject();
+        //设置用户登录失效时间为半个小时
+        subject.getSession().setTimeout(1800000);
         AuthenticationToken authenticationToken = new UsernamePasswordToken(blAdmin.getUsername(), blAdmin.getPassword(), StateEnums.ADMIN.getCode());
         try {
             //怎么实现和数据库内的用户名密码校验的？
             subject.login(authenticationToken);
         } catch (Exception e) {
-            e.printStackTrace();
             return new Result<>(ResultEnum.PARAMS_NULL.getCode(), "用户名或密码错误！");
         }
         //登录成功
@@ -122,5 +124,21 @@ public class AdminController {
     public Result<Object> updatePassword(@RequestBody BlAdmin blAdmin) {
         adminService.updatePassword(blAdmin);
         return new Result<>("更新成功！");
+    }
+
+    /**
+     * HelloTest
+     * @param flag
+     * @return
+     */
+    @RequestMapping(value = "/welcome", method = RequestMethod.POST)
+    public Result<Object> helloTest(@RequestBody int flag) throws Exception {
+            if(flag==1){
+                throw new BlogException(ResultEnum.ERROR);
+            }else if(flag==2){
+                throw new Exception("程序异常错误！");
+            }else{
+                throw new RuntimeException("程序运行错误！");
+            }
     }
 }

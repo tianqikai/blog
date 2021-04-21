@@ -18,7 +18,7 @@ public class CommentGoods {
     /**
      * 用户id
      */
-    private Integer userId;
+    private String userId;
 
     /**
      * 评论id

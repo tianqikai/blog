@@ -21,7 +21,7 @@ public enum ResultEnum {
     DATA_NOT_FOUND(40001, "查询失败！"),
     PARAMS_NULL(40002, "参数不能为空！"),
     PARAMS_ERROR(40005, "参数不合法！"),
-    NOT_LOGIN(40003, "当前账号未登录！")
+    NOT_LOGIN(40003, "当前账号未登录或登录失效，请重新登陆！")
     ;
     private  Integer code;
     private  String  msg;

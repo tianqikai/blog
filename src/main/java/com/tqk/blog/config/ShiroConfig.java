@@ -1,6 +1,7 @@
 package com.tqk.blog.config;
 
 import com.google.common.collect.Maps;
+import com.tqk.blog.filters.LoginFilter;
 import com.tqk.blog.realm.AdminRealm;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
@@ -12,6 +13,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
+import javax.servlet.Filter;
 import java.util.Map;
 
 /**
@@ -31,7 +33,9 @@ public class ShiroConfig {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
 
         shiroFilterFactoryBean.setSecurityManager(securityManager);
-
+        // 把自定义的过滤器放入shiro中
+        Map<String, Filter> shiroFilters = shiroFilterFactoryBean.getFilters();
+        shiroFilters.put("authc", new LoginFilter());
         /**
          * 常用过滤器
          *  anon：无需认证可以访问

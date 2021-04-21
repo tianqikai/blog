@@ -1,6 +1,8 @@
 package com.tqk.blog.service.impl;
 
 
+import com.tqk.blog.dao.CollectionDao;
+import com.tqk.blog.dao.CommentDao;
 import com.tqk.blog.enums.ResultEnum;
 import com.tqk.blog.enums.StateEnums;
 import com.tqk.blog.execption.BlogException;
@@ -40,6 +42,12 @@ public class UserServiceImpl implements UserService {
     private BlUserMapper userMapper;
     @Autowired
     private IdWorker idWorker;
+    @Autowired
+    private CommentDao commentDao;
+    @Autowired
+    private CollectionDao collectionDao;
+    @Autowired
+    FastDfsUtils fastDfsUtils;
 
     @Override
     public void save(BlUser user) {
@@ -48,7 +56,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void update(BlUser user) {
-        userMapper.update(user);
+        BlUser oldBlUser=userMapper.selectByPrimaryKey(user.getUserId());
+        userMapper.updateInfo(user);
+        if(StringUtils.isNoneBlank(oldBlUser.getHeader())&&!oldBlUser.getHeader().equals(user.getHeader())){
+            fastDfsUtils.deleteFile(oldBlUser.getHeader());
+        }
     }
 
     @Override
@@ -71,7 +83,14 @@ public class UserServiceImpl implements UserService {
         page.setTotalCount(totalCount);
         return page;
     }
-
+    /**
+     * @Method： resetPwd
+     * @Description： 重置密码
+     * @param userIds
+     * @Date： 2021/4/14 22:31
+     * @Author： Administrator
+     * @Version  1.0
+     */
     @Override
     public void resetPwd(List<String> userIds) {
         // JDK8新特性：集合的流式操作，这里使用到了Lambda表达式
@@ -85,7 +104,13 @@ public class UserServiceImpl implements UserService {
             userMapper.update(e);
         });
     }
-
+    /**
+     * @Method： register
+     * @Description：注册用户
+     * @Date： 2021/4/14 22:33
+     * @Author： Administrator
+     * @Version  1.0
+     */
     @Override
     public BlUser register(BlUser user) {
         // 先根据用户名查询用户是否存在
@@ -94,9 +119,9 @@ public class UserServiceImpl implements UserService {
         if (blUser != null) {
             throw new BlogException(ResultEnum.PARAMS_ERROR.getCode(), "用户已存在！");
         }else{
+            //生成用户ID
             String ID= String.valueOf(idWorker.nextId());
             user.setUserId(ID);
-            System.out.println("ID:"+ID+"userid:"+user.getUserId());
         }
         // 如果不存在，插入数据
         user.setCreatedTime(new Date());
@@ -121,19 +146,36 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateInfo(BlUser user) {
+        BlUser oldBlUser=userMapper.selectByPrimaryKey(user.getUserId());
         userMapper.updateInfo(user);
+        if(!oldBlUser.getHeader().equals(user.getHeader())){
+            fastDfsUtils.deleteFile(oldBlUser.getHeader());
+        }
     }
-
+    /**
+     * @Method： getCommentAndCollectionCount
+     * @Description：获取用户评论信息和收藏数
+     * @Date： 2021/4/14 22:34
+     * @Author： tianqikai
+     * @Version  1.0
+     */
     @Override
     public Map<String, Object> getCommentAndCollectionCount() {
         BlUser user = (BlUser) ShiroUtils.getLoginUser();
-//        int commentCount = commentDao.countByCommentUser(user.getUserId());
-//        int collectionCount = collectionDao.countByUserId(user.getUserId());
+        int commentCount = commentDao.countByCommentUser(user.getUserId());
+        int collectionCount = collectionDao.countByUserId(user.getUserId());
         Map<String, Object> map = new HashMap<>(4);
-//        map.put("commentCount", commentCount);
-//        map.put("collectionCount", collectionCount);
+        map.put("commentCount", commentCount);
+        map.put("collectionCount", collectionCount);
         return map;
     }
+    /**
+     * @Method： logOut
+     * @Description：注销登录
+     * @Date： 2021/4/14 22:37
+     * @Author： tianqikai
+     * @Version  1.0
+     */
     @Override
     public void logOut(){
         Subject subject = SecurityUtils.getSubject();
@@ -157,6 +199,9 @@ public class UserServiceImpl implements UserService {
             }
         }
         Subject subject = SecurityUtils.getSubject();
+        //设置用户登陆后，永不失效
+//        subject.getSession().setTimeout(-1000L);
+        subject.getSession().setTimeout(3600000);
         AuthenticationToken authenticationToken = new UsernamePasswordToken(user.getUserId(), user.getPassword(), StateEnums.USER.getCode());
         try {
             subject.login(authenticationToken);

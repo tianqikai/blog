@@ -2,7 +2,6 @@ package com.tqk.blog.controller;
 
 
 import com.tqk.blog.enums.ResultEnum;
-import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.pojo.BlMusic;
 import com.tqk.blog.service.MusicService;
 import com.tqk.blog.utils.Page;
@@ -28,7 +27,6 @@ public class MusicController {
 
     /**
      * 保存
-     *
      * @param music
      * @returnR
      */
@@ -36,21 +34,12 @@ public class MusicController {
     public Result<Object> save(@RequestBody BlMusic music) {
         String msg="添加成功！";
         Result<Object> result =new Result(msg);
-        try{
-            musicService.save(music);
-        }catch(Exception e){
-            if(e instanceof BlogException){
-                result.setMsg(e.getMessage());
-            }else{
-                result.setMsg("音乐添加失败！");
-            }
-        }
+        musicService.save(music);
         return result;
     }
 
     /**
      * 更新
-     *
      * @param music
      * @return
      */
@@ -62,7 +51,6 @@ public class MusicController {
 
     /**
      * 根据id查询
-     *
      * @param id
      * @return
      */
@@ -74,7 +62,6 @@ public class MusicController {
 
     /**
      * 根据id删除
-     *
      * @param id
      * @return
      */
@@ -86,7 +73,6 @@ public class MusicController {
 
     /**
      * 启用
-     *
      * @param id
      * @return
      */
@@ -98,7 +84,6 @@ public class MusicController {
 
     /**
      * 弃用
-     *
      * @param id
      * @return
      */
@@ -110,7 +95,6 @@ public class MusicController {
 
     /**
      * 分页查询
-     *
      * @param page
      * @return
      */
@@ -131,7 +115,6 @@ public class MusicController {
 
     /**
      * 前台查询
-     *
      * @return
      */
     @RequestMapping(value = "/getList", method = RequestMethod.GET)

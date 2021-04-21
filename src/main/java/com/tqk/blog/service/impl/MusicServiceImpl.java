@@ -7,7 +7,9 @@ import com.tqk.blog.execption.BlogException;
 import com.tqk.blog.mapper.BlMusicMapper;
 import com.tqk.blog.pojo.BlMusic;
 import com.tqk.blog.service.MusicService;
+import com.tqk.blog.utils.FastDfsUtils;
 import com.tqk.blog.utils.Page;
+import com.tqk.blog.utils.StringUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,6 +32,8 @@ public class MusicServiceImpl implements MusicService {
 
     @Autowired
     private BlMusicMapper musicMapper;
+    @Autowired
+    private  FastDfsUtils fastDfsUtils;
 
     @Override
     public void save(BlMusic music) {
@@ -47,8 +51,16 @@ public class MusicServiceImpl implements MusicService {
 
     @Override
     public void update(BlMusic music) {
-
+        BlMusic oldMusic=musicMapper.selectByPrimaryKey(music.getId());
         musicMapper.updateByPrimaryKey(music);
+        if(StringUtils.isNoneBlank(oldMusic.getCover())&&!oldMusic.getUrl().equals(music.getUrl())){
+            //先删除原来的文件
+            fastDfsUtils.deleteFile(oldMusic.getUrl());
+        }
+        if(StringUtils.isNoneBlank(oldMusic.getCover())&&!oldMusic.getCover().equals(music.getCover())){
+            //先删除原来的封面图片
+            fastDfsUtils.deleteFile(oldMusic.getCover());
+        }
     }
 
     @Override

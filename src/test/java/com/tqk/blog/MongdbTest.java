@@ -65,7 +65,7 @@ public class MongdbTest {
        int num= blogGoodsDao.countByUserIdAndBlogId("11111","213414wfsavgsdfg");
         System.out.println("点赞次数："+num);
     }
-
-    @Test
-    public void
+//
+//    @Test
+//    public void
 }
