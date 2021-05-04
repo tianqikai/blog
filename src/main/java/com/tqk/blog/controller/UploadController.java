@@ -2,8 +2,9 @@ package com.tqk.blog.controller;
 
 import com.tqk.blog.enums.ResultEnum;
 import com.tqk.blog.execption.BlogException;
-import com.tqk.blog.utils.Result;
+import com.tqk.blog.service.impl.UploadServiceImpl;
 import com.tqk.blog.utils.FastDfsUtils;
+import com.tqk.blog.utils.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.Map;
 
 /**
  * @program: blog
@@ -33,6 +36,8 @@ public class UploadController {
     @Autowired
     private FastDfsUtils fastDfsUtils;
 
+    @Autowired
+    private UploadServiceImpl  uploadServiceImpl;
     /**
      * 上传文件
      * @param file
@@ -64,5 +69,17 @@ public class UploadController {
             throw new BlogException(ResultEnum.ERROR.getCode(),e.getMessage());
         }
         return new Result<>(ResultEnum.SUCCESS.getCode(),msg);
+    }
+    /**
+     * 上传文件
+     * @param fileMap
+     */
+    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+    public Result<String> uploadFile(@RequestBody Map<String,Object> fileMap){
+        int respCode= ResultEnum.SUCCESS.getCode();
+        String url="";
+        String msg="上传成功!";
+        url=uploadServiceImpl.uploadFile(fileMap);
+        return new Result<>(respCode,msg, url);
     }
 }
